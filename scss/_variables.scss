@@ -1,0 +1,19 @@
+$pc:768px;
+$min:768px;
+$max:1350px;
+
+@mixin large($pc) {
+    @media screen and (min-width: $pc) {
+        @content;
+        
+    }
+}
+
+// @mixin middle($min, $max) {
+//     @media screen and (min-width: $min) and (max-width: $max) {
+//         @content;
+//     }
+// }
+
+
+
