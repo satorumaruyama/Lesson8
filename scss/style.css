@@ -373,6 +373,349 @@ th {
   font-weight: bold;
 }
 
+body .mainVisual {
+  width: 92%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+body .mainVisual__container {
+  padding-top: 21px;
+}
+body .mainVisual__title {
+  font-size: 30px;
+  font-family: "Source Han Sans JP";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding-top: 88px;
+}
+@media screen and (min-width: 768px) {
+  body .mainVisual__title {
+    font-size: 36px;
+    padding-top: 0;
+  }
+}
+body .mainVisual__guide {
+  font-size: 12px;
+  font-family: "Source Han Sans JP";
+  color: rgb(0, 0, 0);
+  text-align: end;
+  padding-top: 18px;
+}
+body .gallery {
+  width: 92%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 61px;
+}
+body .gallery .title {
+  font-size: 22px;
+  font-family: "Source Han Sans JP";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding-bottom: 8px;
+  position: relative;
+  border-bottom: 3px solid #dddddd;
+}
+@media screen and (min-width: 768px) {
+  body .gallery .title {
+    font-size: 28px;
+  }
+}
+body .gallery .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 14%;
+  height: 3px;
+  background: #168352;
+}
+body .gallery .container {
+  padding-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  body .gallery .container {
+    width: 57%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  body .gallery .container img {
+    width: 100%;
+    padding-top: 50px;
+  }
+}
+body .feature {
+  width: 92%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+body .feature .title {
+  font-size: 22px;
+  font-family: "Source Han Sans JP";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding-bottom: 8px;
+  position: relative;
+  border-bottom: 3px solid #dddddd;
+}
+body .feature .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 14%;
+  height: 3px;
+  background: #168352;
+}
+body .feature .container {
+  padding-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  body .feature .container {
+    display: flex;
+    width: 57%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  body .feature .container img {
+    padding-top: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body .feature__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+body .feature__item {
+  padding-top: 14px;
+}
+body .feature__text {
+  font-size: 18px;
+  font-family: "Source Han Sans JP";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding-top: 6px;
+  padding-bottom: 21px;
+}
+body .price {
+  width: 92%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 61px;
+}
+body .price .container {
+  padding-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  body .price .container {
+    width: 57%;
+    margin: 0 auto;
+  }
+}
+body .price .title {
+  font-size: 22px;
+  font-family: "Source Han Sans JP";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding-bottom: 8px;
+  position: relative;
+  border-bottom: 3px solid #dddddd;
+}
+body .price .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 14%;
+  height: 3px;
+  background: #168352;
+}
+body .price__price {
+  font-size: 32px;
+  font-family: "Montserrat";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+body .price__small {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+body .spec {
+  width: 92%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 61px;
+}
+body .spec .container {
+  padding-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  body .spec .container {
+    width: 57%;
+    margin: 0 auto;
+  }
+}
+body .spec .title {
+  font-size: 22px;
+  font-family: "Source Han Sans JP";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding-bottom: 8px;
+  position: relative;
+  border-bottom: 3px solid #dddddd;
+}
+body .spec .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 14%;
+  height: 3px;
+  background: #168352;
+}
+body .spec__object {
+  font-size: 20px;
+  font-family: "Source Han Sans JP";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border-left: 3px solid #168352;
+  margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  body .spec__object {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  body .spec__list {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+body .spec__item {
+  display: flex;
+  width: 100%;
+}
+body .spec__grey {
+  background-color: #f5f5f5;
+  font-size: 16px;
+  font-family: "Source Han Sans JP";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border: 1px solid #dddddd;
+  padding: 12px;
+}
+@media screen and (min-width: 768px) {
+  body .spec__grey {
+    width: 20%;
+  }
+}
+body .spec__white {
+  font-size: 16px;
+  font-family: "Source Han Sans JP";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  border: 1px solid #dddddd;
+  padding: 12px;
+}
+@media screen and (min-width: 768px) {
+  body .spec__white {
+    width: 80%;
+  }
+}
+body .inquiry {
+  background-image: url("../images/inquiry-img.png");
+  aspect-ratio: 390/360;
+  background-size: cover;
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  body .inquiry {
+    aspect-ratio: 1400/450;
+  }
+}
+body .inquiry__btn {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+body .inquiry__btn a {
+  font-size: 20px;
+  font-family: "Source Han Sans JP";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border: 2px solid #ffffff;
+  border-radius: 40px;
+  padding: 15px 113px;
+}
+
+body .mainVisual {
+  width: 92%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+body .mainVisual__container {
+  padding-top: 21px;
+}
+body .mainVisual__title {
+  font-size: 30px;
+  font-family: "Source Han Sans JP";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding-top: 88px;
+}
+@media screen and (min-width: 768px) {
+  body .mainVisual__title {
+    font-size: 36px;
+    padding-top: 0;
+  }
+}
+body .mainVisual__guide {
+  font-size: 12px;
+  font-family: "Source Han Sans JP";
+  color: rgb(0, 0, 0);
+  text-align: end;
+  padding-top: 18px;
+}
+body .faq__list {
+  width: 92%;
+  margin: 0 auto;
+}
+body .faq__item {
+  border: 1px solid #cccccc;
+  border-radius: 16px;
+}
+body .faq__question {
+  display: flex;
+  align-items: center;
+}
+body .faq__question::before {
+  content: "Q";
+}
+body .faq__question::after {
+  content: "-";
+}
+body .faq__icon {
+  font-size: 11px;
+  font-family: "Source Han Sans JP";
+  color: rgb(22, 131, 82);
+}
+body .faq__text {
+  font-size: 16px;
+  font-family: "Source Han Sans JP";
+  color: rgb(0, 0, 0);
+}
+body .faq__answer {
+  font-size: 16px;
+  font-family: "Source Han Sans JP";
+  color: rgb(0, 0, 0);
+  width: 90%;
+  margin: 0 auto;
+}
+
 body .header__inner {
   display: flex;
   justify-content: space-between;

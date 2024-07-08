@@ -1,0 +1,66 @@
+body {
+    .mainVisual {
+        width: 92%;
+        margin: 0 auto;
+        padding-bottom: 10px;
+        &__container {
+            padding-top: 21px;
+        }
+        &__title {
+            font-size: 30px;
+            font-family: "Source Han Sans JP";
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            padding-top: 88px;
+            @include large($pc) {
+                font-size: 36px;
+                padding-top: 0;
+            }
+        }
+        &__guide {
+            font-size: 12px;
+            font-family: "Source Han Sans JP";
+            color: rgb(0, 0, 0);
+            text-align: end;
+            padding-top: 18px;
+        }
+    }
+
+    .faq {
+        &__list {
+            width: 92%;
+            margin: 0 auto;
+        }
+        &__item {
+            border: 1px solid #cccccc;
+            border-radius: 16px;
+        }
+        &__question {
+            display: flex;
+            align-items: center;
+        }
+        &__question::before {
+            content: "Q";
+        }
+        &__question::after {
+            content: "-";
+        }
+        &__icon {
+            font-size: 11px;
+            font-family: "Source Han Sans JP";
+            color: rgb(22, 131, 82);
+        }
+        &__text {
+            font-size: 16px;
+            font-family: "Source Han Sans JP";
+            color: rgb(0, 0, 0);
+        }
+        &__answer {
+            font-size: 16px;
+            font-family: "Source Han Sans JP";
+            color: rgb(0, 0, 0);
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}
