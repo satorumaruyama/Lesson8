@@ -41,17 +41,20 @@ body {
         &__item {
             border: 1px solid #cccccc;
             border-radius: 16px;
+            padding-bottom: 16px;
+            margin-bottom: 23px;
         }
         &__question {
             display: flex;
             align-items: center;
             width: 90%;
             margin: 0 auto;
+            padding-top: 12px;
         }
         &__questionContents {
             width: 74%;
             margin: 0 auto;
-            padding: 26px 0;
+            padding-top: 8px;
         }
         &__questionDouble {
             display: flex;
@@ -63,11 +66,12 @@ body {
             font-family: "Montserrat";
             color: rgb(22, 131, 82);
             font-weight: bold;
-            padding-bottom: 60px;
+            padding-bottom: 52px;
             padding-left: 6px;
         }
         &__question::after {
-            content: "-";
+            content: "\F63B";
+            font-family: bootstrap-icons;
             width: 20px;
             font-weight: bold;
         }
@@ -91,7 +95,7 @@ body {
             color: rgb(0, 0, 0);
             width: 90%;
             margin: 0 auto;
-            padding: 10px 0;
+            padding: 0 8px;
         }
     }
 }
