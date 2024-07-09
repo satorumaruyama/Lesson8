@@ -19,6 +19,7 @@ body {
             }
         }
         &__logo {
+            width: 500px;
             @include large($pc) {
                 display: flex;
                 align-items: center;
@@ -33,28 +34,40 @@ body {
                 width: 16.5625rem;
             }
         }
+        &__nav {
+            position: relative;
+            width: 100%;
+            @include large($pc) {
+                display: block;
+                width: 16.3125rem;
+            }
+        }
+        &__list {
+            background-color: #ffffff;
+            position: absolute;
+            width: 200%;
+            top: 30px;
+            left: -132px;
+            z-index: 1;
+            @include large($pc) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
         &__item {
+            display: none;
             font-size: 16px;
             font-family: "Source Han Sans JP";
             color: rgb(0, 0, 0);
             font-weight: bold;
-            line-height: 1.2;
-        }
-        &__nav {
-            display: none;
+            padding-left: 20px;
             @include large($pc) {
-                display: block;
-                width: 16.3125rem;
-
+                padding-top: 50px;
             }
         }
-        &__list {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
         &__hamburger {
-            width: 3.375rem;
+            padding-right: 15px;
             height: 3.9rem;
             @include large($pc) {
                 display: none;
@@ -65,7 +78,6 @@ body {
             position: relative;
             font-size: 1.7rem;
             padding-top: 1.2rem;
-            padding-left: 2rem;
         }
     }
 
@@ -212,7 +224,7 @@ body {
             padding-top: 3.25rem;
             @include large($pc) {
                 font-size: 1.25rem;
-                padding-top: 3.75rem;
+                padding-top: 4.125rem;
             }
         }
         .subtitle {
@@ -242,7 +254,7 @@ body {
         &__item {
             padding-bottom: 1.125rem;
             @include large($pc) {
-                width: 22.3125rem;
+                width: calc((100% - 60px) /3);
                 padding-bottom: 0;
                 padding-top: 0.25rem;
             }
@@ -259,7 +271,7 @@ body {
 
     .service {
         @include large($pc) {
-            padding-bottom: 97px;
+            padding-bottom: 47px;
         }
         .title {
             font-size: 1rem;
@@ -290,13 +302,13 @@ body {
             padding-top: 1.125rem;
             padding-bottom: 2.0625rem;
             @include large($pc) {
-                width: 83%;
-                display: grid;
-                grid-template-columns: repeat(3, 1fr); /* 最大3列を定義 */
-                grid-auto-rows: auto; /* 行の高さはコンテンツに合わせる */
-                gap: 10px; /* 任意のギャップ */
+                width: 79%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                column-gap: 50px;
                 padding-top: 1.625rem;
-                padding-bottom: 4.6875rem;
+                padding-bottom: 0;
             }
         }
         &__item {
@@ -306,19 +318,19 @@ body {
             padding: 1.25rem 1.5625rem;
             margin-bottom: 1.3125rem;
             @include large($pc) {
+                justify-content: space-around;
+                align-items: center;
                 width: 22.3125rem;
-                padding-bottom: 0;
-                padding-top: 0.25rem;
-                grid-column: span 1 / span 1;
+                margin-bottom: 0;
+                padding: 40px 0;
             }
         }
-        & .-one {
-            grid-column: span 1 / span 1;
-            grid-row: 1 / 2; /* 1行目に配置 */
+        & .-first {
+            width: 50%;
+            padding: 40px 0;
         }
         & .-two {
-            grid-column: span 1 / span 1;
-            grid-row: 2 / 3; /* 2行目に配置 */
+
         }
 
 
@@ -328,12 +340,19 @@ body {
             color: rgb(255, 255, 255);
             font-weight: bold;
             width: 11.6875rem;
-            padding-left: 1.4375rem;
+            padding-left: 1rem;
             padding-top: 1.0625rem;
+            @include large($pc) {
+                width: 235px;
+                font-size: 24px;
+                padding: 0;
+            }
         }
     }
 
     .voice {
+        background-color: #f3f9f6;
+        padding-bottom: 31px;
         @include large($pc) {
             padding-bottom: 0;
         }
@@ -343,7 +362,7 @@ body {
             color: rgb(22, 131, 82);
             font-weight: bold;
             text-align: center;
-            padding-top: 3.25rem;
+            padding-top: 47px;
             @include large($pc) {
                 font-size: 1.25rem;
                 padding-top: 3.75rem;
@@ -389,18 +408,23 @@ body {
             width: 100%;
             height: 198px;
         }
+        &__img {
+            aspect-ratio: 359/220;
+
+        }
         &__text {
             font-size: 18px;
             font-family: "Source Han Sans JP";
             color: rgb(9, 148, 123);
             font-weight: bold;
+            padding-top: 10px;
         }
     }
 
     .news {
-        padding-bottom: 10px;
+        padding-bottom: 70px;
         @include large($pc) {
-            padding-bottom: 97px;
+            padding-bottom: 65px;
         }
         .title {
             font-size: 1rem;
@@ -411,7 +435,7 @@ body {
             padding-top: 3.25rem;
             @include large($pc) {
                 font-size: 1.25rem;
-                padding-top: 3.75rem;
+                padding-top: 2.75rem;
             }
         }
         .subtitle {
@@ -433,7 +457,7 @@ body {
             @include large($pc) {
                 width: 83%;
                 padding-top: 1.625rem;
-                padding-bottom: 4.6875rem;
+                padding-bottom: 2.6875rem;
             }
         }
         &__item {
@@ -446,14 +470,13 @@ body {
                 column-gap: 10px;
                 margin: 0 auto;
                 width: 1200px;
-                padding: 20px 130px;
-                grid-column: span 1 / span 1;
+                padding: 5px 137px 15px
             }
         }
         &__flex {
             display: flex;
             justify-content: start;
-            padding-top: 20px;
+            padding-top: 15px;
             @include large($pc) {
                 padding-top: 0;
                 column-gap: 10px;
@@ -475,6 +498,10 @@ body {
             font-family: "Source Han Sans JP";
             color: rgb(255, 255, 255);
             border-radius: 4px;
+            margin-left: 17px;
+            @include large($pc) {
+                margin-left: 0;
+            }
         }
         &__text {
             font-size: 15px;
@@ -482,10 +509,12 @@ body {
             color: rgb(9, 148, 123);
             font-weight: bold;
             color: #09947b;
-            padding-bottom: 20px;
+            padding-bottom: 8px;
+            padding-top: 10px;
             @include large($pc) {
-                font-size: 19px;
+                font-size: 15px;
                 padding-bottom: 0;
+                padding-left: 15px;
             }
         }
         &__btn {
@@ -496,7 +525,7 @@ body {
             border-radius: 7.4vw;
             margin: 0 auto;
             box-shadow: 1.221rem rgb(6, 102, 85);
-            // box-shadow: 0 0.221rem 0px 0px rgb(6, 102, 85);
+            box-shadow: 0 0.221rem 0px 0px rgb(6, 102, 85);
             font-size: 18px;
             font-family: "Source Han Sans JP";
             color: rgb(255, 255, 255);
@@ -504,12 +533,15 @@ body {
             white-space: nowrap;
             cursor: pointer;
             background-color: #09947b;
-            padding: 10px 0;
+            padding: 15px 0;
         }
     }
 
     .footer {
         background-color: #168352;
+        &__inner {
+            padding: 15px 0;
+        }
         &__list {
             display: flex;
             justify-content: center;
@@ -517,10 +549,13 @@ body {
             font-size: 13px;
             font-family: "Source Han Sans JP";
             color: rgb(255, 255, 255);
-            padding:28px 0
+            padding:7px 0;
+            @include large($pc) {
+                font-size: 15px;
+            }
         }
         &__item {
-            padding: 0 0.625rem;
+            padding: 0 1rem;
         }
     }
 }

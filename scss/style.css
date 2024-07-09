@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! destyle.css v4.0.1 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -194,6 +193,7 @@ object,
 iframe {
   vertical-align: bottom;
   max-width: 100%;
+  height: auto;
 }
 
 /* Forms */
@@ -380,18 +380,31 @@ body .mainVisual {
 }
 body .mainVisual__container {
   padding-top: 21px;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  body .mainVisual__container {
+    width: 93%;
+    margin: 0 auto;
+  }
 }
 body .mainVisual__title {
   font-size: 30px;
   font-family: "Source Han Sans JP";
   color: rgb(0, 0, 0);
   font-weight: bold;
-  padding-top: 88px;
+  padding-top: 20px;
 }
 @media screen and (min-width: 768px) {
   body .mainVisual__title {
     font-size: 36px;
     padding-top: 0;
+    position: absolute;
+    bottom: 38px;
+    left: 0px;
+    background-color: #ffffff;
+    border-radius: 0 40px 0 0;
+    padding: 42px;
   }
 }
 body .mainVisual__guide {
@@ -401,11 +414,16 @@ body .mainVisual__guide {
   text-align: end;
   padding-top: 18px;
 }
+@media screen and (min-width: 768px) {
+  body .mainVisual__gap {
+    padding: 0 5px;
+  }
+}
 body .gallery {
   width: 92%;
   margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 61px;
+  padding-top: 13px;
+  padding-bottom: 29px;
 }
 body .gallery .title {
   font-size: 22px;
@@ -419,6 +437,7 @@ body .gallery .title {
 @media screen and (min-width: 768px) {
   body .gallery .title {
     font-size: 28px;
+    padding-bottom: 23px;
   }
 }
 body .gallery .title::before {
@@ -434,28 +453,32 @@ body .gallery .container {
 }
 @media screen and (min-width: 768px) {
   body .gallery .container {
-    width: 57%;
+    width: 62%;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) {
-  body .gallery .container img {
-    width: 100%;
-    padding-top: 50px;
+  body .gallery picture img {
+    padding-top: 28px;
   }
 }
 body .feature {
   width: 92%;
   margin: 0 auto;
   padding-top: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 34px;
+}
+@media screen and (min-width: 768px) {
+  body .feature {
+    width: 100%;
+  }
 }
 body .feature .title {
-  font-size: 22px;
+  font-size: 28px;
   font-family: "Source Han Sans JP";
   color: rgb(0, 0, 0);
   font-weight: bold;
-  padding-bottom: 8px;
+  padding-bottom: 25px;
   position: relative;
   border-bottom: 3px solid #dddddd;
 }
@@ -472,25 +495,32 @@ body .feature .container {
 }
 @media screen and (min-width: 768px) {
   body .feature .container {
-    display: flex;
     width: 57%;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) {
   body .feature .container img {
-    padding-top: 50px;
+    padding-top: 28px;
   }
+}
+body .feature__list {
+  padding-top: 8px;
 }
 @media screen and (min-width: 768px) {
   body .feature__list {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
   }
 }
 body .feature__item {
   padding-top: 14px;
+}
+@media screen and (min-width: 768px) {
+  body .feature__item {
+    width: calc((100% - 62px) / 3);
+    padding-top: 0;
+  }
 }
 body .feature__text {
   font-size: 18px;
@@ -501,13 +531,9 @@ body .feature__text {
   padding-bottom: 21px;
 }
 body .price {
-  width: 92%;
+  width: 100%;
   margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 61px;
-}
-body .price .container {
-  padding-top: 10px;
+  padding-bottom: 34px;
 }
 @media screen and (min-width: 768px) {
   body .price .container {
@@ -516,11 +542,11 @@ body .price .container {
   }
 }
 body .price .title {
-  font-size: 22px;
+  font-size: 28px;
   font-family: "Source Han Sans JP";
   color: rgb(0, 0, 0);
   font-weight: bold;
-  padding-bottom: 8px;
+  padding-bottom: 25px;
   position: relative;
   border-bottom: 3px solid #dddddd;
 }
@@ -537,6 +563,12 @@ body .price__price {
   font-family: "Montserrat";
   color: rgb(0, 0, 0);
   font-weight: bold;
+  padding-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  body .price__price {
+    padding-top: 21px;
+  }
 }
 body .price__small {
   font-size: 16px;
@@ -544,13 +576,10 @@ body .price__small {
   font-weight: bold;
 }
 body .spec {
-  width: 92%;
+  width: 100%;
   margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 61px;
-}
-body .spec .container {
-  padding-top: 10px;
+  padding-top: 16px;
+  padding-bottom: 64px;
 }
 @media screen and (min-width: 768px) {
   body .spec .container {
@@ -559,11 +588,11 @@ body .spec .container {
   }
 }
 body .spec .title {
-  font-size: 22px;
+  font-size: 28px;
   font-family: "Source Han Sans JP";
   color: rgb(0, 0, 0);
   font-weight: bold;
-  padding-bottom: 8px;
+  padding-bottom: 25px;
   position: relative;
   border-bottom: 3px solid #dddddd;
 }
@@ -582,12 +611,19 @@ body .spec__object {
   font-weight: bold;
   border-left: 3px solid #168352;
   margin-top: 10px;
+  padding-top: 10px;
+  padding-left: 15px;
 }
 @media screen and (min-width: 768px) {
   body .spec__object {
     width: 90%;
     margin: 0 auto;
+    font-size: 24px;
+    padding-top: 33px;
   }
+}
+body .spec__list {
+  padding-top: 18px;
 }
 @media screen and (min-width: 768px) {
   body .spec__list {
@@ -595,9 +631,17 @@ body .spec__object {
     margin: 0 auto;
   }
 }
-body .spec__item {
-  display: flex;
-  width: 100%;
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  body .spec__list {
+    width: 92%;
+    padding-top: 25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body .spec__item {
+    display: flex;
+    width: 100%;
+  }
 }
 body .spec__grey {
   background-color: #f5f5f5;
@@ -606,11 +650,13 @@ body .spec__grey {
   color: rgb(0, 0, 0);
   font-weight: bold;
   border: 1px solid #dddddd;
-  padding: 12px;
+  padding: 5.5px 19px;
 }
 @media screen and (min-width: 768px) {
   body .spec__grey {
     width: 20%;
+    width: 29%;
+    padding: 17px 0 17px 14px;
   }
 }
 body .spec__white {
@@ -619,11 +665,12 @@ body .spec__white {
   color: rgb(0, 0, 0);
   line-height: 1.2;
   border: 1px solid #dddddd;
-  padding: 12px;
+  padding: 7.5px 18px;
 }
 @media screen and (min-width: 768px) {
   body .spec__white {
     width: 80%;
+    padding: 20px 0 20px 22px;
   }
 }
 body .inquiry {
@@ -649,28 +696,35 @@ body .inquiry__btn a {
   font-weight: bold;
   border: 2px solid #ffffff;
   border-radius: 40px;
-  padding: 15px 113px;
+  padding: 24px 116px;
 }
 
 body .mainVisual {
   width: 92%;
   margin: 0 auto;
-  padding-bottom: 10px;
+  padding-bottom: 38px;
 }
 body .mainVisual__container {
   padding-top: 21px;
+  position: relative;
 }
 body .mainVisual__title {
   font-size: 30px;
   font-family: "Source Han Sans JP";
   color: rgb(0, 0, 0);
   font-weight: bold;
-  padding-top: 88px;
+  padding-top: 20px;
 }
 @media screen and (min-width: 768px) {
   body .mainVisual__title {
     font-size: 36px;
     padding-top: 0;
+    position: absolute;
+    bottom: 38px;
+    left: 0px;
+    background-color: #ffffff;
+    border-radius: 0 40px 0 0;
+    padding: 42px;
   }
 }
 body .mainVisual__guide {
@@ -691,17 +745,40 @@ body .faq__item {
 body .faq__question {
   display: flex;
   align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+body .faq__questionContents {
+  width: 74%;
+  margin: 0 auto;
+  padding: 26px 0;
+}
+body .faq__questionDouble {
+  display: flex;
+  justify-content: space-around;
 }
 body .faq__question::before {
-  content: "Q";
+  content: "Q.";
+  font-size: 24px;
+  font-family: "Montserrat";
+  color: rgb(22, 131, 82);
+  font-weight: bold;
+  padding-bottom: 60px;
+  padding-left: 6px;
 }
 body .faq__question::after {
   content: "-";
+  width: 20px;
+  font-weight: bold;
 }
 body .faq__icon {
   font-size: 11px;
   font-family: "Source Han Sans JP";
   color: rgb(22, 131, 82);
+  border: 1px solid #168352;
+  border-radius: 4px;
+  width: 42%;
+  text-align: center;
 }
 body .faq__text {
   font-size: 16px;
@@ -714,6 +791,7 @@ body .faq__answer {
   color: rgb(0, 0, 0);
   width: 90%;
   margin: 0 auto;
+  padding: 10px 0;
 }
 
 body .header__inner {
@@ -729,6 +807,9 @@ body .header__inner {
     padding: 1.9375rem 0;
   }
 }
+body .header__logo {
+  width: 500px;
+}
 @media screen and (min-width: 768px) {
   body .header__logo {
     display: flex;
@@ -743,15 +824,9 @@ body .header__inner {
     width: 16.5625rem;
   }
 }
-body .header__item {
-  font-size: 16px;
-  font-family: "Source Han Sans JP";
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  line-height: 1.2;
-}
 body .header__nav {
-  display: none;
+  position: relative;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   body .header__nav {
@@ -760,12 +835,35 @@ body .header__nav {
   }
 }
 body .header__list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #ffffff;
+  position: absolute;
+  width: 200%;
+  top: 30px;
+  left: -132px;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  body .header__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+body .header__item {
+  display: none;
+  font-size: 16px;
+  font-family: "Source Han Sans JP";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  body .header__item {
+    padding-top: 50px;
+  }
 }
 body .header__hamburger {
-  width: 3.375rem;
+  padding-right: 15px;
   height: 3.9rem;
 }
 @media screen and (min-width: 768px) {
@@ -777,7 +875,6 @@ body .header .fa-bars {
   position: relative;
   font-size: 1.7rem;
   padding-top: 1.2rem;
-  padding-left: 2rem;
 }
 body .vision__container {
   width: 92%;
@@ -947,7 +1044,7 @@ body .reason .title {
 @media screen and (min-width: 768px) {
   body .reason .title {
     font-size: 1.25rem;
-    padding-top: 3.75rem;
+    padding-top: 4.125rem;
   }
 }
 body .reason .subtitle {
@@ -983,7 +1080,7 @@ body .reason__item {
 }
 @media screen and (min-width: 768px) {
   body .reason__item {
-    width: 22.3125rem;
+    width: calc((100% - 60px) / 3);
     padding-bottom: 0;
     padding-top: 0.25rem;
   }
@@ -998,7 +1095,7 @@ body .reason__text {
 }
 @media screen and (min-width: 768px) {
   body .service {
-    padding-bottom: 97px;
+    padding-bottom: 47px;
   }
 }
 body .service .title {
@@ -1036,13 +1133,14 @@ body .service__list {
 }
 @media screen and (min-width: 768px) {
   body .service__list {
-    width: 83%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 最大3列を定義 */
-    grid-auto-rows: auto; /* 行の高さはコンテンツに合わせる */
-    gap: 10px; /* 任意のギャップ */
+    width: 79%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
     padding-top: 1.625rem;
-    padding-bottom: 4.6875rem;
+    padding-bottom: 0;
   }
 }
 body .service__item {
@@ -1054,19 +1152,16 @@ body .service__item {
 }
 @media screen and (min-width: 768px) {
   body .service__item {
+    justify-content: space-around;
+    align-items: center;
     width: 22.3125rem;
-    padding-bottom: 0;
-    padding-top: 0.25rem;
-    grid-column: span 1/span 1;
+    margin-bottom: 0;
+    padding: 40px 0;
   }
 }
-body .service .-one {
-  grid-column: span 1/span 1;
-  grid-row: 1/2; /* 1行目に配置 */
-}
-body .service .-two {
-  grid-column: span 1/span 1;
-  grid-row: 2/3; /* 2行目に配置 */
+body .service .-first {
+  width: 50%;
+  padding: 40px 0;
 }
 body .service__text {
   font-size: 1.125rem;
@@ -1074,8 +1169,19 @@ body .service__text {
   color: rgb(255, 255, 255);
   font-weight: bold;
   width: 11.6875rem;
-  padding-left: 1.4375rem;
+  padding-left: 1rem;
   padding-top: 1.0625rem;
+}
+@media screen and (min-width: 768px) {
+  body .service__text {
+    width: 235px;
+    font-size: 24px;
+    padding: 0;
+  }
+}
+body .voice {
+  background-color: #f3f9f6;
+  padding-bottom: 31px;
 }
 @media screen and (min-width: 768px) {
   body .voice {
@@ -1088,7 +1194,7 @@ body .voice .title {
   color: rgb(22, 131, 82);
   font-weight: bold;
   text-align: center;
-  padding-top: 3.25rem;
+  padding-top: 47px;
 }
 @media screen and (min-width: 768px) {
   body .voice .title {
@@ -1143,18 +1249,22 @@ body .voice__imgContainer {
   width: 100%;
   height: 198px;
 }
+body .voice__img {
+  aspect-ratio: 359/220;
+}
 body .voice__text {
   font-size: 18px;
   font-family: "Source Han Sans JP";
   color: rgb(9, 148, 123);
   font-weight: bold;
+  padding-top: 10px;
 }
 body .news {
-  padding-bottom: 10px;
+  padding-bottom: 70px;
 }
 @media screen and (min-width: 768px) {
   body .news {
-    padding-bottom: 97px;
+    padding-bottom: 65px;
   }
 }
 body .news .title {
@@ -1168,7 +1278,7 @@ body .news .title {
 @media screen and (min-width: 768px) {
   body .news .title {
     font-size: 1.25rem;
-    padding-top: 3.75rem;
+    padding-top: 2.75rem;
   }
 }
 body .news .subtitle {
@@ -1194,7 +1304,7 @@ body .news__list {
   body .news__list {
     width: 83%;
     padding-top: 1.625rem;
-    padding-bottom: 4.6875rem;
+    padding-bottom: 2.6875rem;
   }
 }
 body .news__item {
@@ -1210,14 +1320,13 @@ body .news__item {
          column-gap: 10px;
     margin: 0 auto;
     width: 1200px;
-    padding: 20px 130px;
-    grid-column: span 1/span 1;
+    padding: 5px 137px 15px;
   }
 }
 body .news__flex {
   display: flex;
   justify-content: start;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 @media screen and (min-width: 768px) {
   body .news__flex {
@@ -1244,6 +1353,12 @@ body .news__notification {
   font-family: "Source Han Sans JP";
   color: rgb(255, 255, 255);
   border-radius: 4px;
+  margin-left: 17px;
+}
+@media screen and (min-width: 768px) {
+  body .news__notification {
+    margin-left: 0;
+  }
 }
 body .news__text {
   font-size: 15px;
@@ -1251,12 +1366,14 @@ body .news__text {
   color: rgb(9, 148, 123);
   font-weight: bold;
   color: #09947b;
-  padding-bottom: 20px;
+  padding-bottom: 8px;
+  padding-top: 10px;
 }
 @media screen and (min-width: 768px) {
   body .news__text {
-    font-size: 19px;
+    font-size: 15px;
     padding-bottom: 0;
+    padding-left: 15px;
   }
 }
 body .news__btn {
@@ -1267,6 +1384,7 @@ body .news__btn {
   border-radius: 7.4vw;
   margin: 0 auto;
   box-shadow: 1.221rem rgb(6, 102, 85);
+  box-shadow: 0 0.221rem 0px 0px rgb(6, 102, 85);
   font-size: 18px;
   font-family: "Source Han Sans JP";
   color: rgb(255, 255, 255);
@@ -1274,10 +1392,13 @@ body .news__btn {
   white-space: nowrap;
   cursor: pointer;
   background-color: #09947b;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 body .footer {
   background-color: #168352;
+}
+body .footer__inner {
+  padding: 15px 0;
 }
 body .footer__list {
   display: flex;
@@ -1286,8 +1407,13 @@ body .footer__list {
   font-size: 13px;
   font-family: "Source Han Sans JP";
   color: rgb(255, 255, 255);
-  padding: 28px 0;
+  padding: 7px 0;
+}
+@media screen and (min-width: 768px) {
+  body .footer__list {
+    font-size: 15px;
+  }
 }
 body .footer__item {
-  padding: 0 0.625rem;
+  padding: 0 1rem;
 }/*# sourceMappingURL=style.css.map */

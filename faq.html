@@ -48,11 +48,10 @@
 
         <div class="mainVisual">
             <div class="mainVisual__container">
-                <!-- <picture>
-                    <source srcset="images/mainVisual_faq_img.png" media="(min-width: 768px)" type="image/png">
-                    <img src="images/mainVisual_products_service_imgPc.png" alt=””>
-                </picture> -->
-                <img src="images/mainVisual_faq_img.png" alt=””>
+                <picture>
+                    <source srcset="images/mainVisual_faq_img.png">
+                    <img src="images/mainVisual_faq_img.png" alt=”” width="100%">
+                </picture>
                   <h1 class="mainVisual__title">よくあるご質問</h1>
                   <p class="mainVisual__guide">トップ</p>
             </div>
@@ -61,8 +60,22 @@
         <ul class="faq__list">
             <li class="faq__item">
                 <div class="faq__question">
-                    <p class="faq__icon">ご利用について</p>
-                    <p class="faq__text">農業用ドローンの主な用途は何ですか？</p>
+                    <div class="faq__questionContents">
+                        <p class="faq__icon">ご利用について</p>
+                        <p class="faq__text">農業用ドローンの主な用途は何ですか？</p>
+                    </div>
+                </div>
+                <p class="faq__answer">農業用ドローンは、作物の健康状態のモニタリング、除草剤・肥料等の散布、灌漑システムの管理など、農業生産の効率を向上させるために使用されます。</p>
+            </li>
+            <li class="faq__item">
+                <div class="faq__question">
+                    <div class="faq__questionContents">
+                        <div class="faq__questionDouble">
+                            <p class="faq__icon">ご利用について</p>
+                            <p class="faq__icon">製品について</p>
+                        </div>
+                            <p class="faq__text">農業用ドローンの主な用途は何ですか？</p>
+                    </div>
                 </div>
                 <p class="faq__answer">農業用ドローンは、作物の健康状態のモニタリング、除草剤・肥料等の散布、灌漑システムの管理など、農業生産の効率を向上させるために使用されます。</p>
             </li>
@@ -70,7 +83,6 @@
 
         <footer class="footer">
             <div class="footer__inner">
-
                 <nav class="footer__nav">
                     <ul class="footer__list">
                         <li class="footer__item"><a href="#about">価格・スペック</a></li>
