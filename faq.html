@@ -17,7 +17,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     
         <!-- その他のライブラリのCSS -->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
@@ -37,8 +37,8 @@
                 </div>
                 <nav class="header__nav">
                     <ul class="header__list">
-                        <li class="header__item"><a href="#about">価格・スペック</a></li>
-                        <li class="header__item"><a href="#service">よくあるご質問</a></li>
+                        <li class="header__item"><a href="price">価格・スペック</a></li>
+                        <li class="header__item"><a href="faq">よくあるご質問</a></li>
                     </ul>
                 </nav>
                 <div class="header__hamburger hamburger" id="js-hamburger">
@@ -47,25 +47,28 @@
             </div>
         </header>
 
-        <div class="mainVisual">
-            <div class="mainVisual__container">
+        <div class="faqMain">
+            <div class="faqMain__container">
                 <picture>
                     <source srcset="images/mainVisual_faq_img.png">
-                    <img src="images/mainVisual_faq_img.png" alt=”” width="100%">
+                    <img src="images/mainVisual_faq_imgPc.png" alt="">
                 </picture>
-                  <h1 class="mainVisual__title">よくあるご質問</h1>
-                  <p class="mainVisual__guide">トップ</p>
+                <h1 class="faqMain__title">よくあるご質問</h1>
+                <p class="faqMain__guide">トップ<span class="faqMain__gap">&gt;</span>よくあるご質問</p>
             </div>
         </div>
 
         <ul class="faq__list">
             <li class="faq__item">
-                <div class="faq__question">
-                    <div class="faq__questionContents">
-                        <p class="faq__icon">ご利用について</p>
+                    <div class="faq__question">
+                        <div class="faq__questionContents">
+                            <p class="faq__icon">ご利用について</p>
+                            <i class="bi bi-dash-lg"></i>
+                        </div>
+                    </div>
+                    <div class="faq__questionContainer">
                         <p class="faq__text">農業用ドローンの主な用途は何ですか？</p>
                     </div>
-                </div>
                 <p class="faq__answer">農業用ドローンは、作物の健康状態のモニタリング、除草剤・肥料等の散布、灌漑システムの管理など、農業生産の効率を向上させるために使用されます。</p>
             </li>
             <li class="faq__item">
@@ -75,21 +78,148 @@
                             <p class="faq__icon">ご利用について</p>
                             <p class="faq__icon">製品について</p>
                         </div>
-                            <p class="faq__text">農業用ドローンの導入による主な利点は何ですか？</p>
+                        <i class="bi bi-dash-lg"></i>
                     </div>
+                </div>
+                <div class="faq__questionContainer">
+                    <p class="faq__text">農業用ドローンの導入による主な利点は何ですか？</p>
                 </div>
                 <p class="faq__answer">農業用ドローンの導入により、労働力を削減し作業効率を向上させることができます。また、病害虫の早期発見や適切な散布が可能となり、生産性や質を向上させることができます。</p>
             </li>
+            <li class="faq__item">
+                <div class="faq__question">
+                    <div class="faq__questionContents">
+                        <div class="faq__questionDouble">
+                            <p class="faq__icon">ご利用について</p>
+                            <p class="faq__icon">製品について</p>
+                        </div>
+                            <i class="bi bi-dash-lg"></i>
+                    </div>
+                </div>
+                <div class="faq__questionContainer">
+                    <p class="faq__text">農業用ドローンの種類は？</p>
+                </div>
+                <p class="faq__answer">フィックスウィング（固定翼）ドローン、ロータリーウィング（回転翼）ドローン、および、マルチコプター（複数のプロペラを持つ）ドローンがあります。</p>
+            </li>
+            <li class="faq__item">
+                <div class="faq__question">
+                    <div class="faq__questionContents">
+                        <div class="faq__questionDouble">
+                            <p class="faq__icon">ご利用について</p>
+                            <p class="faq__icon">使用について</p>
+                        </div>
+                        <i class="bi bi-dash-lg"></i>
+                    </div>
+                </div>
+                <div class="faq__questionContainer">
+                    <p class="faq__text">農業用ドローンの価格はどのくらいですか？</p>
+                </div>
+                <p class="faq__answer">ドローンの種類、性能、機能によって価格は異なりますが、一般的には数万円から数百万円の範囲で販売されています。</p>
+            </li>
+            <li class="faq__item">
+                <div class="faq__question">
+                    <div class="faq__questionContents">
+                        <p class="faq__icon">使用について</p>
+                        <i class="bi bi-dash-lg"></i>
+                    </div>
+                </div>
+                <div class="faq__questionContainer">
+                    <p class="faq__text">特別な免許や資格は必要ですか？</p>
+                </div>
+                <p class="faq__answer">農業用ドローンの操縦には、国によって異なるが、無人航空機操縦士免許やドローン操縦資格が必要とされる場合があります。</p>
+            </li>
+            <li class="faq__item">
+                <div class="faq__question">
+                    <div class="faq__questionContents">
+                        <p class="faq__icon">使用について</p>
+                        <i class="bi bi-dash-lg"></i>
+                    </div>
+                </div>
+                <div class="faq__questionContainer">
+                    <p class="faq__text">農業用ドローンの法規制は何ですか？</p>
+                </div>
+                <p class="faq__answer">国や地域によって異なりますが、一般的には飛行高度、飛行速度、操縦者とドローンの距離、人口密集地や空港周辺の飛行に関する制限が設けられています。</p>
+            </li>
+            <li class="faq__item">
+                <div class="faq__question">
+                    <div class="faq__questionContents">
+                        <p class="faq__icon">ご利用について</p>
+                        <i class="bi bi-dash-lg"></i>
+                    </div>
+                </div>
+                <div class="faq__questionContainer">
+                    <p class="faq__text">農業用ドローンのバッテリー寿命は？</p>
+                </div>
+                <p class="faq__answer">ドローンの種類やバッテリー容量によって異なりますが、一般的には約20分から60分の飛行時間があります。</p>
+            </li>
+            <li class="faq__item">
+                <div class="faq__question">
+                    <div class="faq__questionContents">
+                        <div class="faq__questionDouble">
+                            <p class="faq__icon">ご利用について</p>
+                            <p class="faq__icon">製品について</p>
+                        </div>
+                        <i class="bi bi-dash-lg"></i>
+                    </div>
+                </div>
+                <div class="faq__questionContainer">
+                    <p class="faq__text">散布する薬剤や肥料の量はどのように制御されますか？</p>
+                </div>
+                <p class="faq__answer">農業用ドローンには、散布量を制御するためのシステムが搭載されており、必要な量を正確に散布できます。</p>
+            </li>
+            <li class="faq__item">
+                <div class="faq__question">
+                    <div class="faq__questionContents">
+                        <p class="faq__icon">ご利用について</p>
+                        <i class="bi bi-dash-lg"></i>
+                    </div>
+                </div>
+                <div class="faq__questionContainer">
+                    <p class="faq__text">データ収集や解析にはどのようなソフトウェアが使用されますか？</p>
+                </div>
+                <p class="faq__answer">農業用ドローンのデータ収集や解析には、専用のソフトウェアが使用されます。これにより、作物の健康状態や生育状況を詳細に分析することができます。</p>
+            </li>
+            <li class="faq__item">
+                <div class="faq__question">
+                    <div class="faq__questionContents">
+                        <div class="faq__questionDouble">
+                            <p class="faq__icon">ご利用について</p>
+                            <p class="faq__icon">製品について</p>
+                        </div>
+                        <i class="bi bi-dash-lg"></i>
+                    </div>
+                </div>
+                <div class="faq__questionContainer">
+                    <p class="faq__text">農業用ドローンはどのような気象条件で飛行できますか？</p>
+                </div>
+                <p class="faq__answer">雨や強風の条件下では飛行が困難だったり安全上の問題が発生することがあります。ドローンの性能や設計によって対応できる気象条件は異なります。</p>
+            </li>
+            <li class="faq__item">
+                <div class="faq__question">
+                    <div class="faq__questionContents">
+                        <div class="faq__questionDouble">
+                            <p class="faq__icon">ご利用について</p>
+                            <p class="faq__icon">製品について</p>
+                        </div>
+                        <i class="bi bi-dash-lg"></i>
+                    </div>
+                </div>
+                <div class="faq__questionContainer">
+                    <p class="faq__text">農業用ドローンのメンテナンスには何が必要ですか？</p>
+                </div>
+                <p class="faq__answer">ドローンの定期点検や部品の交換、ソフトウェアのアップデートなどが必要となります。メンテナンスは専門業者やメーカーに依頼することもできます。</p>
+            </li>
+
         </ul>
 
         <footer class="footer">
             <div class="footer__inner">
                 <nav class="footer__nav">
-                    <ul class="footer__list">
-                        <li class="footer__item"><a href="#about">価格・スペック</a></li>
+                    <div class="footer__list">
+                        <p class="footer__item"><a href="price">価格・スペック</a></p>
                         <span>|</span>
-                        <li class="footer__item"><a href="#service">よくあるご質問</a></li>
-                    </ul>
+                        <p class="footer__item"><a href="faq">よくあるご質問</a></p>
+                    </div>
                 </nav>
             </div>
         </footer>

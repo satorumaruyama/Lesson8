@@ -36,8 +36,8 @@
                 </div>
                 <nav class="header__nav">
                     <ul class="header__list">
-                        <li class="header__item"><a href="#about">価格・スペック</a></li>
-                        <li class="header__item"><a href="#service">よくあるご質問</a></li>
+                        <li class="header__item"><a href="price">価格・スペック</a></li>
+                        <li class="header__item"><a href="faq">よくあるご質問</a></li>
                     </ul>
                 </nav>
                 <div class="header__hamburger hamburger" id="js-hamburger">
@@ -46,23 +46,23 @@
             </div>
         </header>
 
-        <div class="mainVisual">
-            <div class="mainVisual__container">
+        <div class="priceMain">
+            <div class="priceMain__container">
                 <picture>
                     <source srcset="images/mainVisual_products_service_img.png">
-                    <img src="images/mainVisual_products_service_imgPc.png" alt="" width="100%">
+                    <img src="images/mainVisual_products_service_imgPc.png" alt="">
                 </picture>
-                <h1 class="mainVisual__title">価格・スペック</h1>
-                <p class="mainVisual__guide">トップ<span class="mainVisual__gap">></span>価格・スペック</p>
+                <h1 class="priceMain__title">価格・スペック</h1>
+                <p class="priceMain__guide">トップ<span class="priceMain__gap">&gt;</span>価格・スペック</p>
             </div>
         </div>
 
         <section class="gallery">
             <div class="container">
                 <h2 class="title">ギャラリー</h2>
-                <picture>
+                <picture class="gallery__picture">
                     <source srcset="images/products_service_carousel_img.png">
-                    <img src="images/pht_products_service_carouselPc.png" alt="" width="95%">
+                    <img src="images/pht_products_service_carouselPc.png" alt="">
                 </picture>
             </div>
         </section>
@@ -145,18 +145,17 @@
         </section>
 
         <div class="inquiry">
-            <h2 class="inquiry__btn"><a href="">お問い合わせ</a></h2>
+            <h2 class="inquiry__btn"><a href="contact">お問い合わせ</a></h2>
         </div>
 
         <footer class="footer">
             <div class="footer__inner">
-
                 <nav class="footer__nav">
-                    <ul class="footer__list">
-                        <li class="footer__item"><a href="#about">価格・スペック</a></li>
+                    <div class="footer__list">
+                        <p class="footer__item"><a href="price">価格・スペック</a></p>
                         <span>|</span>
-                        <li class="footer__item"><a href="#service">よくあるご質問</a></li>
-                    </ul>
+                        <p class="footer__item"><a href="faq">よくあるご質問</a></p>
+                    </div>
                 </nav>
             </div>
         </footer>

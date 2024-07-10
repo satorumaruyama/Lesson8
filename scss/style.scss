@@ -6,7 +6,9 @@
 @import "_faq";
 
 body {
+    margin: 0 auto;
     .header {
+
         &__inner {
             display: flex;
             justify-content: space-between;
@@ -16,10 +18,11 @@ body {
             @include large($pc) {
                 width: 83.5%;
                 padding: 1.9375rem 0;
+                max-width: 1400px;
             }
         }
         &__logo {
-            width: 500px;
+            width: 31.25rem;
             @include large($pc) {
                 display: flex;
                 align-items: center;
@@ -39,35 +42,39 @@ body {
             width: 100%;
             @include large($pc) {
                 display: block;
+                position: unset;
                 width: 16.3125rem;
             }
         }
         &__list {
             background-color: #ffffff;
             position: absolute;
-            width: 200%;
-            top: 30px;
-            left: -132px;
+            width: 24.375rem;
+            top: 1.875rem;
             z-index: 1;
+            right: -2.0625rem;
             @include large($pc) {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                position: unset;
+                width: 16.6875rem;
             }
         }
         &__item {
             display: none;
-            font-size: 16px;
+            font-size: 1rem;
             font-family: "Source Han Sans JP";
             color: rgb(0, 0, 0);
             font-weight: bold;
-            padding-left: 20px;
+            padding-left: 1.25rem;
             @include large($pc) {
-                padding-top: 50px;
+                display: block;
+                padding-left: 0;
             }
         }
         &__hamburger {
-            padding-right: 15px;
+            padding-right: 0.9375rem;
             height: 3.9rem;
             @include large($pc) {
                 display: none;
@@ -82,10 +89,15 @@ body {
     }
 
     .vision {
+        @include large($pc) {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
         &__container {
             width: 92%;
             margin: 0 auto;
-            padding-bottom: 17px;
+            padding-bottom: 1.0625rem;
             @include large($pc) {
                 width: 83.5%;
                 padding: 1.9375rem 0;
@@ -103,6 +115,8 @@ body {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                width: 100%;
+                max-width: 1400px;
             }
         }
         &__title {
@@ -157,7 +171,7 @@ body {
         background-size: cover;
         @include large($pc) {
             background-image: unset;
-            padding-bottom: 49px;
+            padding-bottom: 3.0625rem;
         }
         &__container {
             width: 92%;
@@ -205,7 +219,7 @@ body {
             display: none;
             @include large($pc) {
                 display: block;
-                padding-right: 35px;
+                padding-right: 2.1875rem;
             }
         }
     }
@@ -213,7 +227,7 @@ body {
     .reason {
         background-color: #f3f9f6;
         @include large($pc) {
-            padding-bottom: 0.6875rem;
+            padding-bottom: 1.8125rem;
         }
         .title {
             font-size: 1rem;
@@ -248,30 +262,46 @@ body {
                 display: flex;
                 justify-content: space-between;
                 padding-top: 1.625rem;
-                padding-bottom: 4.6875rem;
+                max-width: 1400px;
+                
             }
         }
         &__item {
             padding-bottom: 1.125rem;
             @include large($pc) {
-                width: calc((100% - 60px) /3);
+                width: calc((100% - 3.75rem) /3);
                 padding-bottom: 0;
-                padding-top: 0.25rem;
             }
         }
+        &__item img {
+            @include large($pc) {
+                width: 100%;
+            }
+        }
+        &__picture {
+            width: 100%;
+        }
         &__text {
+            background-color: #ffffff;
             font-size: 1.125rem;
             font-family: "Source Han Sans JP";
             color: rgb(17, 17, 17);
             font-weight: bold;
             padding: 0.875rem;
-            border-radius: 0 0 24px 24px;
+            border-radius: 0 0 1.5rem 1.5rem;
+            @include large($pc) {
+                padding: 2rem 1rem 1.4375rem;
+            }
         }
     }
 
     .service {
+        padding-bottom: 0.25rem;
         @include large($pc) {
-            padding-bottom: 47px;
+            padding-bottom: 3.4375rem;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
         }
         .title {
             font-size: 1rem;
@@ -300,18 +330,46 @@ body {
             width: 92%;
             margin: 0 auto;
             padding-top: 1.125rem;
+            @include large($pc) {
+                width: 79%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                column-gap: 3.125rem;
+                padding-top: 1.625rem;
+                padding-bottom: 0;
+            }
+        }
+        &__listPc {
+            width: 92%;
+            margin: 0 auto;
             padding-bottom: 2.0625rem;
             @include large($pc) {
                 width: 79%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                column-gap: 50px;
-                padding-top: 1.625rem;
+                column-gap: 3.125rem;
+                padding-top: 2.4375rem;
                 padding-bottom: 0;
             }
         }
         &__item {
+            display: flex;
+            background-color: #168352;
+            border-radius: 1.5rem;
+            padding: 1.875rem 1.5625rem;
+            margin-bottom: 1.3125rem;
+            @include large($pc) {
+                justify-content: space-around;
+                align-items: center;
+                width: 22.3125rem;
+                margin-bottom: 0;
+                padding: 0 0.625rem;
+
+            }
+        }
+        &__itemPc {
             display: flex;
             background-color: #168352;
             border-radius: 1.5rem;
@@ -322,17 +380,29 @@ body {
                 align-items: center;
                 width: 22.3125rem;
                 margin-bottom: 0;
-                padding: 40px 0;
+                padding: 0 0.625rem;
+
+            } 
+        }
+        &__item img {
+            width: 25%;
+            @include middle($min, $max) {
+                padding: 0 0.5625rem;
+            }
+        }
+        &__itemPc img {
+            width: 32%;
+            @include large($pc) {
+                width: 80%;
+                padding: 1.125rem 0.75rem;
             }
         }
         & .-first {
-            width: 50%;
-            padding: 40px 0;
+            @include large($pc) {
+                width: 50%;
+                padding: 1.5625rem 0;
+            }
         }
-        & .-two {
-
-        }
-
 
         &__text {
             font-size: 1.125rem;
@@ -343,18 +413,40 @@ body {
             padding-left: 1rem;
             padding-top: 1.0625rem;
             @include large($pc) {
-                width: 235px;
-                font-size: 24px;
+                width: 20.75rem;
+                font-size: 1.5rem;
+                padding-right: 5.0625rem;
+                padding-top: 0.0625rem;
+            }
+            @include middle($min, $max) {
+                padding-right: 0;
+                font-size: 0.8125rem;
+            }
+        }
+        &__textPc {
+            font-size: 1.125rem;
+            font-family: "Source Han Sans JP";
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            width: 11.6875rem;
+            padding-left: 1rem;
+            padding-top: 1.0625rem;
+            @include large($pc) {
+                width: 20.75rem;
+                font-size: 1.25rem;
                 padding: 0;
+            }
+            @include middle($min, $max) {
+                font-size: 0.8125rem;
             }
         }
     }
 
     .voice {
         background-color: #f3f9f6;
-        padding-bottom: 31px;
+        padding-bottom: 0.8125rem;
         @include large($pc) {
-            padding-bottom: 0;
+            padding-bottom: 2.125rem;
         }
         .title {
             font-size: 1rem;
@@ -362,7 +454,7 @@ body {
             color: rgb(22, 131, 82);
             font-weight: bold;
             text-align: center;
-            padding-top: 47px;
+            padding-top: 2.9375rem;
             @include large($pc) {
                 font-size: 1.25rem;
                 padding-top: 3.75rem;
@@ -386,45 +478,48 @@ body {
             padding-bottom: 0;
             @include large($pc) {
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                column-gap: 35px;
-                width: 83%;
+                justify-content: space-between;
+                column-gap: 2.1875rem;
+                width: 82%;
                 padding-top: 1.625rem;
-                padding-bottom: 4.6875rem;
+                max-width: 1400px;
             }
         }
         &__item {
             border-radius: 1.5rem;
-            margin-bottom: 1.3125rem;
+            margin-bottom: 1.75rem;
             @include large($pc) {
                 width: 22.3125rem;
                 padding-bottom: 0;
                 padding-top: 0.25rem;
                 grid-column: span 1 / span 1;
+                margin-bottom: 1.3125rem;
             }
         }
         &__imgContainer {
             width: 100%;
-            height: 198px;
+            height: 12.375rem;
         }
         &__img {
             aspect-ratio: 359/220;
 
         }
         &__text {
-            font-size: 18px;
+            font-size: 1.125rem;
             font-family: "Source Han Sans JP";
             color: rgb(9, 148, 123);
             font-weight: bold;
-            padding-top: 10px;
+            padding-top: 0.5625rem;
+            @include large($pc) {
+                padding-top: 2.125rem;
+            }
         }
     }
 
     .news {
-        padding-bottom: 70px;
+        padding-bottom: 3.75rem;
         @include large($pc) {
-            padding-bottom: 65px;
+            padding-bottom: 4.5rem;
         }
         .title {
             font-size: 1rem;
@@ -435,7 +530,7 @@ body {
             padding-top: 3.25rem;
             @include large($pc) {
                 font-size: 1.25rem;
-                padding-top: 2.75rem;
+                padding-top: 3.3125rem;
             }
         }
         .subtitle {
@@ -467,91 +562,106 @@ body {
                 display: flex;
                 align-items: center;
                 text-align: start;
-                column-gap: 10px;
+                column-gap: 0.625rem;
                 margin: 0 auto;
-                width: 1200px;
-                padding: 5px 137px 15px
+                width: 78%;
+                padding: 0.6875rem 0;
             }
         }
         &__flex {
             display: flex;
             justify-content: start;
-            padding-top: 15px;
+            padding-top: 0.9375rem;
             @include large($pc) {
                 padding-top: 0;
-                column-gap: 10px;
+                column-gap: 0.8125rem;
             }
         }
         &__date {
-            font-size: 15px;
+            font-size: 0.9375rem;
             font-family: "Source Han Sans JP";
             color: rgb(34, 34, 34);
             @include large($pc) {
-                font-size: 14px;
+                font-size: 0.875rem;
+                padding-top: 0.25rem;
+                padding-left: 0.1875rem;
             }
         }
         &__notification {
-            width: 134px;
+            width: 8.375rem;
             text-align: center;
             background-color: #473221;
-            font-size: 13px;
+            font-size: 0.8125rem;
             font-family: "Source Han Sans JP";
             color: rgb(255, 255, 255);
-            border-radius: 4px;
-            margin-left: 17px;
+            border-radius: 0.25rem;
+            margin-left: 1.0625rem;
+            white-space: nowrap;
             @include large($pc) {
-                margin-left: 0;
+                margin-left: 0.5rem;
+                padding: 0.125rem 0;
+            }
+            @include middle($min, $max) {
+                width: 12.5rem;
+                margin-left: 1.625rem;
             }
         }
         &__text {
-            font-size: 15px;
+            font-size: 0.9375rem;
             font-family: "Source Han Sans JP";
             color: rgb(9, 148, 123);
             font-weight: bold;
             color: #09947b;
-            padding-bottom: 8px;
-            padding-top: 10px;
+            padding-bottom: 0.5rem;
+            padding-top: 0.625rem;
             @include large($pc) {
-                font-size: 15px;
+                font-size: 0.9375rem;
                 padding-bottom: 0;
-                padding-left: 15px;
+                padding-left: 0.9375rem;
+                padding-top: 0.5rem;
             }
         }
         &__btn {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 300px;
+            width: 18.75rem;
             border-radius: 7.4vw;
             margin: 0 auto;
             box-shadow: 1.221rem rgb(6, 102, 85);
             box-shadow: 0 0.221rem 0px 0px rgb(6, 102, 85);
-            font-size: 18px;
+            font-size: 1.125rem;
             font-family: "Source Han Sans JP";
             color: rgb(255, 255, 255);
             font-weight: bold;
             white-space: nowrap;
             cursor: pointer;
             background-color: #09947b;
-            padding: 15px 0;
+            padding: 0.9375rem 0;
+            @include large($pc) {
+            margin-top: -0.5625rem;
+            }
         }
     }
 
     .footer {
         background-color: #168352;
         &__inner {
-            padding: 15px 0;
+            padding: 0.9375rem 0;
+            @include large($pc) {
+                padding: 1.625rem 0;
+            }
         }
         &__list {
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 13px;
+            font-size: 0.8125rem;
             font-family: "Source Han Sans JP";
             color: rgb(255, 255, 255);
-            padding:7px 0;
+            padding:0.4375rem 0;
             @include large($pc) {
-                font-size: 15px;
+                font-size: 0.9375rem;
             }
         }
         &__item {
