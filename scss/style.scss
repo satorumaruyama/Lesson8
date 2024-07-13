@@ -8,13 +8,13 @@
 body {
     margin: 0 auto;
     .header {
-
         &__inner {
             display: flex;
             justify-content: space-between;
             align-items: center;
             width: 92%;
             margin: 0 auto;
+            position: relative;
             @include large($pc) {
                 width: 83.5%;
                 padding: 1.9375rem 0;
@@ -22,7 +22,7 @@ body {
             }
         }
         &__logo {
-            width: 31.25rem;
+            width: 35.25rem;
             @include large($pc) {
                 display: flex;
                 align-items: center;
@@ -38,8 +38,9 @@ body {
             }
         }
         &__nav {
-            position: relative;
-            width: 100%;
+            position: absolute;
+            width: 22.5rem;
+            top: 3.8125rem;
             @include large($pc) {
                 display: block;
                 position: unset;
@@ -47,15 +48,15 @@ body {
             }
         }
         &__list {
-            background-color: #ffffff;
-            position: absolute;
-            width: 24.375rem;
             top: 1.875rem;
             z-index: 1;
-            right: -2.0625rem;
+            right: -1.875rem;
+            background-color: #168352;
+            border-radius: 1.5rem;
             @include large($pc) {
                 display: flex;
                 justify-content: space-between;
+                background-color: #ffffff;
                 align-items: center;
                 position: unset;
                 width: 16.6875rem;
@@ -64,18 +65,27 @@ body {
         &__item {
             display: none;
             font-size: 1rem;
-            font-family: "Source Han Sans JP";
-            color: rgb(0, 0, 0);
+            font-family: "Noto Sans JP";
+            color: #ffffff;
             font-weight: bold;
             padding-left: 1.25rem;
+            text-align: center;
+            padding: 1.25rem 0;
             @include large($pc) {
                 display: block;
                 padding-left: 0;
+                color: rgb(0, 0, 0);
+            }
+        }
+        &__item:first-child {
+            @include large($pc) {
+                display: none;
             }
         }
         &__hamburger {
             padding-right: 0.9375rem;
             height: 3.9rem;
+            width: 3.8rem;
             @include large($pc) {
                 display: none;
 
@@ -84,7 +94,9 @@ body {
         .fa-bars {
             position: relative;
             font-size: 1.7rem;
-            padding-top: 1.2rem;
+            padding-top: 1.25rem;
+            font-size: 1.5rem;
+            padding-left: 0.5rem;
         }
     }
 
@@ -104,19 +116,26 @@ body {
             }
         }
         &__container img {
+            display: flex;
+            margin: 0 auto;
             padding-top: 1.5625rem;
             object-fit: cover;
             @include large($pc) {
+                display: block;
+                margin: 0;
                 padding-top: 5.25rem;
             }
         }
         &__contents {
+            width: 100%;
+            max-width: 358px;
+            margin: 0 auto;
             @include large($pc) {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                width: 100%;
                 max-width: 1400px;
+                margin: 0;
             }
         }
         &__title {
@@ -157,7 +176,7 @@ body {
         &__aboutUsJp {
             text-align: center;
             font-size: 1.25rem;
-            font-family: "Source Han Sans JP";
+            font-family: "Noto Sans JP";
             color: rgb(0, 0, 0);
             font-weight: bold;
             @include large($pc) {
@@ -190,13 +209,18 @@ body {
             border-radius: 2rem;
             background-color: rgb(255, 255, 255);
             opacity: 0.8;
+            width: 100%;
+            max-width: 358px;
+            margin: 0 auto;
             @include large($pc) {
                 width: 45%;
+                max-width: 1400px;
+                margin: 0;
             }
         }
         &__textLarge {
             font-size: 1.125rem;
-            font-family: "Source Han Sans JP";
+            font-family: "Noto Sans JP";
             color: rgb(17, 17, 17);
             font-weight: bold;
             padding: 1rem 1.5rem 0.375rem;
@@ -207,7 +231,7 @@ body {
         }
         &__textSmall {
             font-size: 0.9375rem;
-            font-family: "Source Han Sans JP";
+            font-family: "Noto Sans JP";
             color: rgb(17, 17, 17);
             padding: 0 1.5rem 1.1875rem;
             @include large($pc) {
@@ -243,7 +267,7 @@ body {
         }
         .subtitle {
             font-size: 1.25rem;
-            font-family: "Source Han Sans JP";
+            font-family: "Noto Sans JP";
             color: rgb(0, 0, 0);
             font-weight: bold;
             text-align: center;
@@ -274,9 +298,8 @@ body {
             }
         }
         &__item img {
-            @include large($pc) {
-                width: 100%;
-            }
+            object-fit: cover;
+            width: 100%;
         }
         &__picture {
             width: 100%;
@@ -284,7 +307,7 @@ body {
         &__text {
             background-color: #ffffff;
             font-size: 1.125rem;
-            font-family: "Source Han Sans JP";
+            font-family: "Noto Sans JP";
             color: rgb(17, 17, 17);
             font-weight: bold;
             padding: 0.875rem;
@@ -317,7 +340,7 @@ body {
         }
         .subtitle {
             font-size: 1.25rem;
-            font-family: "Source Han Sans JP";
+            font-family: "Noto Sans JP";
             color: rgb(0, 0, 0);
             font-weight: bold;
             text-align: center;
@@ -406,7 +429,7 @@ body {
 
         &__text {
             font-size: 1.125rem;
-            font-family: "Source Han Sans JP";
+            font-family: "Noto Sans JP";
             color: rgb(255, 255, 255);
             font-weight: bold;
             width: 11.6875rem;
@@ -425,7 +448,7 @@ body {
         }
         &__textPc {
             font-size: 1.125rem;
-            font-family: "Source Han Sans JP";
+            font-family: "Noto Sans JP";
             color: rgb(255, 255, 255);
             font-weight: bold;
             width: 11.6875rem;
@@ -462,7 +485,7 @@ body {
         }
         .subtitle {
             font-size: 1.25rem;
-            font-family: "Source Han Sans JP";
+            font-family: "Noto Sans JP";
             color: rgb(0, 0, 0);
             font-weight: bold;
             text-align: center;
@@ -486,6 +509,7 @@ body {
             }
         }
         &__item {
+            text-align: center;
             border-radius: 1.5rem;
             margin-bottom: 1.75rem;
             @include large($pc) {
@@ -506,7 +530,7 @@ body {
         }
         &__text {
             font-size: 1.125rem;
-            font-family: "Source Han Sans JP";
+            font-family: "Noto Sans JP";
             color: rgb(9, 148, 123);
             font-weight: bold;
             padding-top: 0.5625rem;
@@ -535,7 +559,7 @@ body {
         }
         .subtitle {
             font-size: 1.25rem;
-            font-family: "Source Han Sans JP";
+            font-family: "Noto Sans JP";
             color: rgb(0, 0, 0);
             font-weight: bold;
             text-align: center;
@@ -579,7 +603,7 @@ body {
         }
         &__date {
             font-size: 0.9375rem;
-            font-family: "Source Han Sans JP";
+            font-family: "Noto Sans JP";
             color: rgb(34, 34, 34);
             @include large($pc) {
                 font-size: 0.875rem;
@@ -592,7 +616,7 @@ body {
             text-align: center;
             background-color: #473221;
             font-size: 0.8125rem;
-            font-family: "Source Han Sans JP";
+            font-family: "Noto Sans JP";
             color: rgb(255, 255, 255);
             border-radius: 0.25rem;
             margin-left: 1.0625rem;
@@ -608,7 +632,7 @@ body {
         }
         &__text {
             font-size: 0.9375rem;
-            font-family: "Source Han Sans JP";
+            font-family: "Noto Sans JP";
             color: rgb(9, 148, 123);
             font-weight: bold;
             color: #09947b;
@@ -628,10 +652,9 @@ body {
             width: 18.75rem;
             border-radius: 7.4vw;
             margin: 0 auto;
-            box-shadow: 1.221rem rgb(6, 102, 85);
             box-shadow: 0 0.221rem 0px 0px rgb(6, 102, 85);
             font-size: 1.125rem;
-            font-family: "Source Han Sans JP";
+            font-family: "Noto Sans JP";
             color: rgb(255, 255, 255);
             font-weight: bold;
             white-space: nowrap;
@@ -657,7 +680,7 @@ body {
             justify-content: center;
             align-items: center;
             font-size: 0.8125rem;
-            font-family: "Source Han Sans JP";
+            font-family: "Noto Sans JP";
             color: rgb(255, 255, 255);
             padding:0.4375rem 0;
             @include large($pc) {
