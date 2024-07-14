@@ -13,11 +13,12 @@ body {
             justify-content: space-between;
             align-items: center;
             width: 92%;
+            max-width: 358px;
             margin: 0 auto;
             position: relative;
             @include large($pc) {
                 width: 83.5%;
-                padding: 1.9375rem 0;
+                padding: 1.5625rem 0;
                 max-width: 1400px;
             }
         }
@@ -39,8 +40,9 @@ body {
         }
         &__nav {
             position: absolute;
-            width: 22.5rem;
+            width: 98%;
             top: 3.8125rem;
+
             @include large($pc) {
                 display: block;
                 position: unset;
@@ -96,7 +98,7 @@ body {
             font-size: 1.7rem;
             padding-top: 1.25rem;
             font-size: 1.5rem;
-            padding-left: 0.5rem;
+            padding-left: 1.125rem;
         }
     }
 
@@ -112,7 +114,7 @@ body {
             padding-bottom: 1.0625rem;
             @include large($pc) {
                 width: 83.5%;
-                padding: 1.9375rem 0;
+                padding: 2.25rem 0;
             }
         }
         &__container img {
@@ -190,7 +192,7 @@ body {
         background-size: cover;
         @include large($pc) {
             background-image: unset;
-            padding-bottom: 3.0625rem;
+            padding-bottom: 3.375rem;
         }
         &__container {
             width: 92%;
@@ -213,7 +215,7 @@ body {
             max-width: 358px;
             margin: 0 auto;
             @include large($pc) {
-                width: 45%;
+                width: 43%;
                 max-width: 1400px;
                 margin: 0;
             }
@@ -251,7 +253,7 @@ body {
     .reason {
         background-color: #f3f9f6;
         @include large($pc) {
-            padding-bottom: 1.8125rem;
+            padding-bottom: 3.25rem;
         }
         .title {
             font-size: 1rem;
@@ -262,7 +264,7 @@ body {
             padding-top: 3.25rem;
             @include large($pc) {
                 font-size: 1.25rem;
-                padding-top: 4.125rem;
+                padding-top: 3.4375rem;
             }
         }
         .subtitle {
@@ -278,6 +280,7 @@ body {
         }
         &__list {
             width: 92%;
+            max-width: 358px;
             margin: 0 auto;
             padding-top: 1.125rem;
             padding-bottom: 2.0625rem;
@@ -285,7 +288,7 @@ body {
                 width: 83%;
                 display: flex;
                 justify-content: space-between;
-                padding-top: 1.625rem;
+                padding-top: 1.5625rem;
                 max-width: 1400px;
                 
             }
@@ -300,6 +303,11 @@ body {
         &__item img {
             object-fit: cover;
             width: 100%;
+            @include large($pc) {
+                height:76%;
+                border-radius: 1.5rem 1.5rem 0 0;
+                
+            }
         }
         &__picture {
             width: 100%;
@@ -313,7 +321,7 @@ body {
             padding: 0.875rem;
             border-radius: 0 0 1.5rem 1.5rem;
             @include large($pc) {
-                padding: 2rem 1rem 1.4375rem;
+                padding: 0.8125rem 1rem 1rem;
             }
         }
     }
@@ -351,6 +359,7 @@ body {
         }
         &__list {
             width: 92%;
+            max-width: 358px;
             margin: 0 auto;
             padding-top: 1.125rem;
             @include large($pc) {
@@ -361,10 +370,12 @@ body {
                 column-gap: 3.125rem;
                 padding-top: 1.625rem;
                 padding-bottom: 0;
+                max-width: unset;
             }
         }
         &__listPc {
             width: 92%;
+            max-width: 358px;
             margin: 0 auto;
             padding-bottom: 2.0625rem;
             @include large($pc) {
@@ -375,13 +386,14 @@ body {
                 column-gap: 3.125rem;
                 padding-top: 2.4375rem;
                 padding-bottom: 0;
+                max-width: unset;
             }
         }
         &__item {
             display: flex;
             background-color: #168352;
             border-radius: 1.5rem;
-            padding: 1.875rem 1.5625rem;
+            padding: 1.1875rem 1.5625rem;
             margin-bottom: 1.3125rem;
             @include large($pc) {
                 justify-content: space-around;
@@ -408,9 +420,10 @@ body {
             } 
         }
         &__item img {
-            width: 25%;
-            @include middle($min, $max) {
-                padding: 0 0.5625rem;
+            width: 33%;
+            @include large ($pc) {
+                width: 25%;
+                margin-left: 1.5rem;
             }
         }
         &__itemPc img {
@@ -423,7 +436,7 @@ body {
         & .-first {
             @include large($pc) {
                 width: 50%;
-                padding: 1.5625rem 0;
+                padding: 1.625rem 0;
             }
         }
 
@@ -440,6 +453,7 @@ body {
                 font-size: 1.5rem;
                 padding-right: 5.0625rem;
                 padding-top: 0.0625rem;
+                padding-left: 0.625rem;
             }
             @include middle($min, $max) {
                 padding-right: 0;
@@ -469,7 +483,7 @@ body {
         background-color: #f3f9f6;
         padding-bottom: 0.8125rem;
         @include large($pc) {
-            padding-bottom: 2.125rem;
+            padding-bottom: 2.5625rem;
         }
         .title {
             font-size: 1rem;
@@ -502,14 +516,13 @@ body {
             @include large($pc) {
                 display: flex;
                 justify-content: space-between;
-                column-gap: 2.1875rem;
-                width: 82%;
-                padding-top: 1.625rem;
+                column-gap: 36px;
+                width: 83%;
+                padding-top: 1.1875rem;
                 max-width: 1400px;
             }
         }
         &__item {
-            text-align: center;
             border-radius: 1.5rem;
             margin-bottom: 1.75rem;
             @include large($pc) {
@@ -524,9 +537,8 @@ body {
             width: 100%;
             height: 12.375rem;
         }
-        &__img {
-            aspect-ratio: 359/220;
-
+        picture img {
+            aspect-ratio: 359/229;
         }
         &__text {
             font-size: 1.125rem;
@@ -535,16 +547,13 @@ body {
             font-weight: bold;
             padding-top: 0.5625rem;
             @include large($pc) {
-                padding-top: 2.125rem;
+                padding-top: 0.625rem;
             }
         }
     }
 
     .news {
-        padding-bottom: 3.75rem;
-        @include large($pc) {
-            padding-bottom: 4.5rem;
-        }
+        padding-bottom: 4rem;
         .title {
             font-size: 1rem;
             font-family: "Montserrat";
@@ -570,6 +579,7 @@ body {
         }
         &__list {
             width: 92%;
+            max-width: 358px;
             margin: 0 auto;
             padding-top: 1.125rem;
             padding-bottom: 2.0625rem;
@@ -577,6 +587,7 @@ body {
                 width: 83%;
                 padding-top: 1.625rem;
                 padding-bottom: 2.6875rem;
+                max-width: unset;
             }
         }
         &__item {
@@ -636,11 +647,11 @@ body {
             color: rgb(9, 148, 123);
             font-weight: bold;
             color: #09947b;
-            padding-bottom: 0.5rem;
+            padding-bottom: 0.5625rem;
             padding-top: 0.625rem;
             @include large($pc) {
                 font-size: 0.9375rem;
-                padding-bottom: 0;
+                padding-bottom: 0.0625rem;
                 padding-left: 0.9375rem;
                 padding-top: 0.5rem;
             }
@@ -661,8 +672,10 @@ body {
             cursor: pointer;
             background-color: #09947b;
             padding: 0.9375rem 0;
-            @include large($pc) {
             margin-top: -0.5625rem;
+            @include large($pc) {
+                margin-top: -0.625rem;
+                padding: 1.1875rem 0;
             }
         }
     }

@@ -999,13 +999,14 @@ body .header__inner {
   justify-content: space-between;
   align-items: center;
   width: 92%;
+  max-width: 358px;
   margin: 0 auto;
   position: relative;
 }
 @media screen and (min-width: 768px) {
   body .header__inner {
     width: 83.5%;
-    padding: 1.9375rem 0;
+    padding: 1.5625rem 0;
     max-width: 1400px;
   }
 }
@@ -1028,7 +1029,7 @@ body .header__logo {
 }
 body .header__nav {
   position: absolute;
-  width: 22.5rem;
+  width: 98%;
   top: 3.8125rem;
 }
 @media screen and (min-width: 768px) {
@@ -1092,7 +1093,7 @@ body .header .fa-bars {
   font-size: 1.7rem;
   padding-top: 1.25rem;
   font-size: 1.5rem;
-  padding-left: 0.5rem;
+  padding-left: 1.125rem;
 }
 @media screen and (min-width: 768px) {
   body .vision {
@@ -1109,7 +1110,7 @@ body .vision__container {
 @media screen and (min-width: 768px) {
   body .vision__container {
     width: 83.5%;
-    padding: 1.9375rem 0;
+    padding: 2.25rem 0;
   }
 }
 body .vision__container img {
@@ -1200,7 +1201,7 @@ body .mission {
 @media screen and (min-width: 768px) {
   body .mission {
     background-image: unset;
-    padding-bottom: 3.0625rem;
+    padding-bottom: 3.375rem;
   }
 }
 body .mission__container {
@@ -1228,7 +1229,7 @@ body .mission__contents {
 }
 @media screen and (min-width: 768px) {
   body .mission__contents {
-    width: 45%;
+    width: 43%;
     max-width: 1400px;
     margin: 0;
   }
@@ -1271,7 +1272,7 @@ body .reason {
 }
 @media screen and (min-width: 768px) {
   body .reason {
-    padding-bottom: 1.8125rem;
+    padding-bottom: 3.25rem;
   }
 }
 body .reason .title {
@@ -1285,7 +1286,7 @@ body .reason .title {
 @media screen and (min-width: 768px) {
   body .reason .title {
     font-size: 1.25rem;
-    padding-top: 4.125rem;
+    padding-top: 3.4375rem;
   }
 }
 body .reason .subtitle {
@@ -1303,6 +1304,7 @@ body .reason .subtitle {
 }
 body .reason__list {
   width: 92%;
+  max-width: 358px;
   margin: 0 auto;
   padding-top: 1.125rem;
   padding-bottom: 2.0625rem;
@@ -1312,7 +1314,7 @@ body .reason__list {
     width: 83%;
     display: flex;
     justify-content: space-between;
-    padding-top: 1.625rem;
+    padding-top: 1.5625rem;
     max-width: 1400px;
   }
 }
@@ -1330,6 +1332,12 @@ body .reason__item img {
      object-fit: cover;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  body .reason__item img {
+    height: 76%;
+    border-radius: 1.5rem 1.5rem 0 0;
+  }
+}
 body .reason__picture {
   width: 100%;
 }
@@ -1344,7 +1352,7 @@ body .reason__text {
 }
 @media screen and (min-width: 768px) {
   body .reason__text {
-    padding: 2rem 1rem 1.4375rem;
+    padding: 0.8125rem 1rem 1rem;
   }
 }
 body .service {
@@ -1387,6 +1395,7 @@ body .service .subtitle {
 }
 body .service__list {
   width: 92%;
+  max-width: 358px;
   margin: 0 auto;
   padding-top: 1.125rem;
 }
@@ -1400,10 +1409,12 @@ body .service__list {
          column-gap: 3.125rem;
     padding-top: 1.625rem;
     padding-bottom: 0;
+    max-width: unset;
   }
 }
 body .service__listPc {
   width: 92%;
+  max-width: 358px;
   margin: 0 auto;
   padding-bottom: 2.0625rem;
 }
@@ -1417,13 +1428,14 @@ body .service__listPc {
          column-gap: 3.125rem;
     padding-top: 2.4375rem;
     padding-bottom: 0;
+    max-width: unset;
   }
 }
 body .service__item {
   display: flex;
   background-color: #168352;
   border-radius: 1.5rem;
-  padding: 1.875rem 1.5625rem;
+  padding: 1.1875rem 1.5625rem;
   margin-bottom: 1.3125rem;
 }
 @media screen and (min-width: 768px) {
@@ -1452,11 +1464,12 @@ body .service__itemPc {
   }
 }
 body .service__item img {
-  width: 25%;
+  width: 33%;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   body .service__item img {
-    padding: 0 0.5625rem;
+    width: 25%;
+    margin-left: 1.5rem;
   }
 }
 body .service__itemPc img {
@@ -1471,7 +1484,7 @@ body .service__itemPc img {
 @media screen and (min-width: 768px) {
   body .service .-first {
     width: 50%;
-    padding: 1.5625rem 0;
+    padding: 1.625rem 0;
   }
 }
 body .service__text {
@@ -1489,6 +1502,7 @@ body .service__text {
     font-size: 1.5rem;
     padding-right: 5.0625rem;
     padding-top: 0.0625rem;
+    padding-left: 0.625rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -1524,7 +1538,7 @@ body .voice {
 }
 @media screen and (min-width: 768px) {
   body .voice {
-    padding-bottom: 2.125rem;
+    padding-bottom: 2.5625rem;
   }
 }
 body .voice .title {
@@ -1564,15 +1578,14 @@ body .voice__list {
   body .voice__list {
     display: flex;
     justify-content: space-between;
-    -moz-column-gap: 2.1875rem;
-         column-gap: 2.1875rem;
-    width: 82%;
-    padding-top: 1.625rem;
+    -moz-column-gap: 36px;
+         column-gap: 36px;
+    width: 83%;
+    padding-top: 1.1875rem;
     max-width: 1400px;
   }
 }
 body .voice__item {
-  text-align: center;
   border-radius: 1.5rem;
   margin-bottom: 1.75rem;
 }
@@ -1589,8 +1602,8 @@ body .voice__imgContainer {
   width: 100%;
   height: 12.375rem;
 }
-body .voice__img {
-  aspect-ratio: 359/220;
+body .voice picture img {
+  aspect-ratio: 359/229;
 }
 body .voice__text {
   font-size: 1.125rem;
@@ -1601,16 +1614,11 @@ body .voice__text {
 }
 @media screen and (min-width: 768px) {
   body .voice__text {
-    padding-top: 2.125rem;
+    padding-top: 0.625rem;
   }
 }
 body .news {
-  padding-bottom: 3.75rem;
-}
-@media screen and (min-width: 768px) {
-  body .news {
-    padding-bottom: 4.5rem;
-  }
+  padding-bottom: 4rem;
 }
 body .news .title {
   font-size: 1rem;
@@ -1641,6 +1649,7 @@ body .news .subtitle {
 }
 body .news__list {
   width: 92%;
+  max-width: 358px;
   margin: 0 auto;
   padding-top: 1.125rem;
   padding-bottom: 2.0625rem;
@@ -1650,6 +1659,7 @@ body .news__list {
     width: 83%;
     padding-top: 1.625rem;
     padding-bottom: 2.6875rem;
+    max-width: unset;
   }
 }
 body .news__item {
@@ -1721,13 +1731,13 @@ body .news__text {
   color: rgb(9, 148, 123);
   font-weight: bold;
   color: #09947b;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.5625rem;
   padding-top: 0.625rem;
 }
 @media screen and (min-width: 768px) {
   body .news__text {
     font-size: 0.9375rem;
-    padding-bottom: 0;
+    padding-bottom: 0.0625rem;
     padding-left: 0.9375rem;
     padding-top: 0.5rem;
   }
@@ -1748,10 +1758,12 @@ body .news__btn {
   cursor: pointer;
   background-color: #09947b;
   padding: 0.9375rem 0;
+  margin-top: -0.5625rem;
 }
 @media screen and (min-width: 768px) {
   body .news__btn {
-    margin-top: -0.5625rem;
+    margin-top: -0.625rem;
+    padding: 1.1875rem 0;
   }
 }
 body .footer {
