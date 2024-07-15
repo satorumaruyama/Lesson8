@@ -377,6 +377,7 @@ body .priceMain {
   width: 92%;
   margin: 0 auto;
   padding-bottom: 1.6875rem;
+  max-width: 358px;
 }
 @media screen and (min-width: 768px) {
   body .priceMain {
@@ -393,7 +394,7 @@ body .priceMain__container {
   body .priceMain__container {
     width: 86%;
     margin: 0 auto;
-    padding-top: 1.8125rem;
+    padding-top: 2.125rem;
   }
 }
 body .priceMain__title {
@@ -431,31 +432,18 @@ body .priceMain__gap {
     padding: 0 0.3125rem;
   }
 }
-body .priceMain picture img {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@media screen and (min-width: 768px) {
-  body .priceMain picture img {
-    height: 34.375rem;
-    border-radius: 1rem;
-    -o-object-position: 0 55%;
-       object-position: 0 55%;
-  }
-}
 body .gallery {
   width: 92%;
   margin: 0 auto;
-  padding-bottom: 4rem;
+  padding-bottom: 3.4375rem;
+  max-width: 358px;
 }
 @media screen and (min-width: 768px) {
   body .gallery {
     padding-bottom: 3.25rem;
     width: 100%;
     max-width: 1400px;
+    padding-bottom: 4rem;
   }
 }
 body .gallery .title {
@@ -470,14 +458,14 @@ body .gallery .title {
 @media screen and (min-width: 768px) {
   body .gallery .title {
     font-size: 1.75rem;
-    padding-bottom: 1.4375rem;
+    padding-bottom: 1rem;
   }
 }
 body .gallery .title::before {
   content: "";
   position: absolute;
   bottom: -3px;
-  width: 14%;
+  width: 12%;
   height: 3px;
   background: #168352;
 }
@@ -500,23 +488,20 @@ body .gallery__picture {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+    height: 31.625rem;
   }
 }
 body .feature {
   width: 92%;
   margin: 0 auto;
   padding-bottom: 1.75rem;
+  max-width: 358px;
 }
 @media screen and (min-width: 768px) {
   body .feature {
     width: 100%;
     max-width: 1400px;
-  }
-}
-@media screen and (min-width: 768px) {
-  body .feature {
-    width: 100%;
-    padding-bottom: 1.6875rem;
+    padding-bottom: 2.0625rem;
   }
 }
 body .feature .title {
@@ -538,7 +523,7 @@ body .feature .title::before {
   content: "";
   position: absolute;
   bottom: -3px;
-  width: 14%;
+  width: 12%;
   height: 3px;
   background: #168352;
 }
@@ -548,11 +533,6 @@ body .feature .title::before {
     margin: 0 auto;
   }
 }
-@media screen and (min-width: 768px) {
-  body .feature .container img {
-    padding-top: 1.75rem;
-  }
-}
 body .feature__list {
   padding-top: 0.5rem;
 }
@@ -560,10 +540,12 @@ body .feature__list {
   body .feature__list {
     display: flex;
     justify-content: space-between;
+    padding-top: 1.9375rem;
   }
 }
 body .feature__item {
   padding-top: 1.0625rem;
+  width: 101%;
 }
 @media screen and (min-width: 768px) {
   body .feature__item {
@@ -575,6 +557,14 @@ body .feature picture img {
   margin: 0 auto;
   display: flex;
 }
+@media screen and (min-width: 768px) {
+  body .feature picture img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 9.5625rem;
+    border-radius: 1.5rem;
+  }
+}
 body .feature__text {
   font-size: 1.125rem;
   font-family: "Noto Sans JP";
@@ -585,13 +575,14 @@ body .feature__text {
 }
 @media screen and (min-width: 768px) {
   body .feature__text {
-    padding-top: 1.1875rem;
+    padding-top: 0.5rem;
   }
 }
 body .price {
   width: 92%;
   margin: 0 auto;
   padding-bottom: 2.6875rem;
+  max-width: 358px;
 }
 @media screen and (min-width: 768px) {
   body .price {
@@ -625,7 +616,7 @@ body .price .title::before {
   content: "";
   position: absolute;
   bottom: -3px;
-  width: 14%;
+  width: 12%;
   height: 3px;
   background: #168352;
 }
@@ -638,7 +629,7 @@ body .price__price {
 }
 @media screen and (min-width: 768px) {
   body .price__price {
-    padding-top: 1.75rem;
+    padding-top: 1.1875rem;
   }
 }
 body .price__small {
@@ -650,11 +641,12 @@ body .spec {
   width: 92%;
   margin: 0 auto;
   padding-bottom: 4.375rem;
+  max-width: 358px;
 }
 @media screen and (min-width: 768px) {
   body .spec {
     width: 100%;
-    padding-bottom: 4.1875rem;
+    padding-bottom: 4.5625rem;
     max-width: 1400px;
   }
 }
@@ -682,7 +674,7 @@ body .spec .title::before {
   content: "";
   position: absolute;
   bottom: -3px;
-  width: 14%;
+  width: 12%;
   height: 3px;
   background: #168352;
 }
@@ -701,7 +693,7 @@ body .spec__object {
     margin: 0 auto;
     font-size: 1.5rem;
     padding-left: 1.125rem;
-    margin-top: 1.875rem;
+    margin-top: 2.125rem;
   }
 }
 body .spec__list {
@@ -738,7 +730,7 @@ body .spec__grey {
   body .spec__grey {
     width: 20%;
     width: 29%;
-    padding: 1.0625rem 0 1.0625rem 0.875rem;
+    padding: 1.0625rem 0 1rem 1rem;
   }
 }
 body .spec__white {
@@ -752,7 +744,7 @@ body .spec__white {
 @media screen and (min-width: 768px) {
   body .spec__white {
     width: 80%;
-    padding: 1.25rem 0 1.25rem 1.375rem;
+    padding: 1.5rem 0 0.25rem 1.3125rem;
   }
 }
 body .inquiry {
@@ -785,10 +777,11 @@ body .faqMain {
   width: 92%;
   margin: 0 auto;
   padding-bottom: 35px;
+  max-width: 358px;
 }
 @media screen and (min-width: 768px) {
   body .faqMain {
-    max-width: 1400px;
+    max-width: 1197px;
   }
 }
 body .faqMain__container {
@@ -805,7 +798,10 @@ body .faqMain__container {
 }
 body .faqMain picture img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 14.375rem;
+  border-radius: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   body .faqMain picture img {
@@ -864,24 +860,26 @@ body .faqMain__gap {
 body .faq__list {
   width: 92%;
   margin: 0 auto;
-  padding-bottom: 133px;
+  padding-bottom: 8.3125rem;
+  max-width: 358px;
 }
 @media screen and (min-width: 768px) {
   body .faq__list {
     width: 57%;
-    padding-top: 25px;
-    max-width: 1400px;
+    padding-top: 1.9375rem;
+    max-width: 798px;
   }
 }
 body .faq__item {
   border: 1px solid #cccccc;
-  border-radius: 16px;
-  padding-bottom: 17px;
-  margin-bottom: 25px;
+  border-radius: 1rem;
+  padding-bottom: 1.0625rem;
+  margin-bottom: 1.4375rem;
 }
 @media screen and (min-width: 768px) {
   body .faq__item {
-    padding-bottom: 17px;
+    padding-bottom: 0.9375rem;
+    margin-bottom: 1.5rem;
   }
 }
 body .faq__question {
@@ -890,7 +888,7 @@ body .faq__question {
   width: 97%;
   margin: 0 auto;
   justify-content: space-between;
-  padding-top: 3px;
+  padding-top: 0.1875rem;
 }
 @media screen and (min-width: 768px) {
   body .faq__question {
@@ -902,31 +900,32 @@ body .faq__questionContents {
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
-  margin-right: 23px;
+  margin-right: 1.4375rem;
 }
 @media screen and (min-width: 768px) {
   body .faq__questionContents {
-    width: 93%;
+    width: 96%;
+    margin-right: 0;
   }
 }
 body .faq__questionContents.active {
   display: block;
 }
 body .faq__icon {
-  font-size: 11px;
+  font-size: 0.6875rem;
   font-family: "Noto Sans JP";
   color: rgb(22, 131, 82);
   border: 1px solid #168352;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   width: 37%;
   text-align: center;
   white-space: nowrap;
-  margin-left: 14px;
+  margin-left: 0.875rem;
 }
 @media screen and (min-width: 768px) {
   body .faq__icon {
     width: 15%;
-    margin-left: 10px;
+    margin-left: 0.625rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -945,16 +944,17 @@ body .faq__questionDouble {
 }
 body .faq__question::before {
   content: "Q.";
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: "Montserrat";
   color: rgb(22, 131, 82);
   font-weight: bold;
-  padding-left: 17px;
-  padding-top: 5px;
+  padding-left: 1.0625rem;
+  padding-top: 0.3125rem;
 }
 @media screen and (min-width: 768px) {
   body .faq__question::before {
     padding-left: 0;
+    padding-top: 0.4375rem;
   }
 }
 body .faq__questionContainer {
@@ -967,27 +967,27 @@ body .faq__questionContainer {
   }
 }
 body .faq__text {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "Noto Sans JP";
   color: rgb(0, 0, 0);
 }
 @media screen and (min-width: 768px) {
   body .faq__text {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 body .faq__answer {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "Noto Sans JP";
   color: rgb(0, 0, 0);
   width: 90%;
   margin: 0 auto;
-  padding: 0 8px;
+  padding: 0 0.5rem;
 }
 @media screen and (min-width: 768px) {
   body .faq__answer {
     width: 94%;
-    padding-top: 22px;
+    padding-top: 1.375rem;
   }
 }
 
@@ -999,7 +999,6 @@ body .header__inner {
   justify-content: space-between;
   align-items: center;
   width: 92%;
-  max-width: 358px;
   margin: 0 auto;
   position: relative;
 }
@@ -1007,7 +1006,7 @@ body .header__inner {
   body .header__inner {
     width: 83.5%;
     padding: 1.5625rem 0;
-    max-width: 1400px;
+    max-width: 1169px;
   }
 }
 body .header__logo {
@@ -1029,8 +1028,9 @@ body .header__logo {
 }
 body .header__nav {
   position: absolute;
-  width: 98%;
+  width: 100%;
   top: 3.8125rem;
+  z-index: 1;
 }
 @media screen and (min-width: 768px) {
   body .header__nav {
@@ -1041,7 +1041,6 @@ body .header__nav {
 }
 body .header__list {
   top: 1.875rem;
-  z-index: 1;
   right: -1.875rem;
   background-color: #168352;
   border-radius: 1.5rem;

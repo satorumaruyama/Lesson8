@@ -13,13 +13,13 @@ body {
             justify-content: space-between;
             align-items: center;
             width: 92%;
-            max-width: 358px;
+            // max-width: 358px;
             margin: 0 auto;
             position: relative;
             @include large($pc) {
                 width: 83.5%;
                 padding: 1.5625rem 0;
-                max-width: 1400px;
+                max-width: 1169px;
             }
         }
         &__logo {
@@ -40,9 +40,9 @@ body {
         }
         &__nav {
             position: absolute;
-            width: 98%;
+            width: 100%;
             top: 3.8125rem;
-
+            z-index: 1;
             @include large($pc) {
                 display: block;
                 position: unset;
@@ -51,7 +51,6 @@ body {
         }
         &__list {
             top: 1.875rem;
-            z-index: 1;
             right: -1.875rem;
             background-color: #168352;
             border-radius: 1.5rem;

@@ -3,6 +3,7 @@ body {
         width: 92%;
         margin: 0 auto;
         padding-bottom: 1.6875rem;
+        max-width: 358px;
         @include large($pc) {
             width: 100%;
             padding-bottom: 3rem;
@@ -14,7 +15,7 @@ body {
             @include large($pc) {
                 width: 86%;
                 margin: 0 auto;
-                padding-top: 1.8125rem;
+                padding-top: 2.125rem;
                 }
         }
         &__title {
@@ -48,28 +49,18 @@ body {
                 padding: 0 0.3125rem;
             }
         }
-        picture img {
-            width: 100%;
-            margin: 0 auto;
-            display: flex;
-            object-fit: cover;
- 
-            @include large($pc) {
-                height: 34.375rem; 
-                border-radius: 1rem;
-                object-position: 0 55%;
-            }
-        }
     }
 
     .gallery {
         width: 92%;
         margin: 0 auto;
-        padding-bottom: 4rem;
+        padding-bottom: 3.4375rem;
+        max-width: 358px;
         @include large($pc) {
             padding-bottom: 3.25rem;
             width: 100%;
             max-width: 1400px;
+            padding-bottom: 4rem;
         }
         .title {
             font-size: 1.375rem;
@@ -81,14 +72,14 @@ body {
             border-bottom: 3px solid #dddddd;
             @include large($pc) {
                 font-size: 1.75rem;
-                padding-bottom: 1.4375rem;
+                padding-bottom: 1rem;
             }
         }
         .title::before {
             content: '';
             position: absolute;
             bottom: -3px;
-            width: 14%;
+            width: 12%;
             height: 3px;
             background: #168352;
         }
@@ -110,6 +101,7 @@ body {
             @include large($pc) {
                 width: 100%;
                 object-fit: cover;
+                height: 31.625rem;
             }
         }
     }
@@ -118,14 +110,13 @@ body {
         width: 92%;
         margin: 0 auto;
         padding-bottom: 1.75rem;
+        max-width: 358px;
         @include large($pc) {
             width: 100%;
             max-width: 1400px;
+            padding-bottom: 2.0625rem;
         }
-        @include large($pc) {
-            width: 100%;
-            padding-bottom: 1.6875rem;
-        }
+
         .title {
             font-size: 1.375rem;
             font-family: "Noto Sans JP";
@@ -143,7 +134,7 @@ body {
             content: '';
             position: absolute;
             bottom: -3px;
-            width: 14%;
+            width: 12%;
             height: 3px;
             background: #168352;
         }
@@ -153,20 +144,17 @@ body {
                 margin: 0 auto;
             }
         }
-        .container img {
-            @include large($pc) {
-            padding-top: 1.75rem;
-            }
-        }
         &__list {
             padding-top: 0.5rem;
             @include large($pc) {
                 display: flex;
                 justify-content: space-between;
+                padding-top: 1.9375rem;
             }
         }
         &__item {
             padding-top: 1.0625rem;
+            width: 101%;
             @include large($pc) {
                 width: calc((100% - 62px) /3);
                 padding-top: 0;
@@ -175,6 +163,11 @@ body {
         picture img {
             margin: 0 auto;
             display: flex;
+            @include large($pc) {
+                object-fit: cover;
+                height: 9.5625rem;
+                border-radius: 1.5rem;
+            }
         }
         &__text {
             font-size: 1.125rem;
@@ -184,7 +177,7 @@ body {
             padding-top: 0.375rem;
             padding-bottom: 1.3125rem;
             @include large($pc) {
-                padding-top: 1.1875rem;
+                padding-top: 0.5rem;
             }
         } 
     }
@@ -193,6 +186,7 @@ body {
         width: 92%;
         margin: 0 auto;
         padding-bottom: 2.6875rem;
+        max-width: 358px;
         @include large($pc) {
             width: 100%;
             padding-bottom: 3rem;
@@ -221,7 +215,7 @@ body {
             content: '';
             position: absolute;
             bottom: -3px;
-            width: 14%;
+            width: 12%;
             height: 3px;
             background: #168352;
         }
@@ -232,7 +226,7 @@ body {
             font-weight: bold;
             padding-top: 0.625rem;
             @include large($pc) {
-                padding-top: 1.75rem;
+                padding-top: 1.1875rem;
             }
         }
         &__small {
@@ -246,9 +240,10 @@ body {
         width: 92%;
         margin: 0 auto;
         padding-bottom: 4.375rem;
+        max-width: 358px;
         @include large($pc) {
             width: 100%;
-            padding-bottom: 4.1875rem;
+            padding-bottom: 4.5625rem;
             max-width: 1400px;
         }
         .container {
@@ -273,7 +268,7 @@ body {
             content: '';
             position: absolute;
             bottom: -3px;
-            width: 14%;
+            width: 12%;
             height: 3px;
             background: #168352;
         }
@@ -290,7 +285,7 @@ body {
                 margin: 0 auto;
                 font-size: 1.5rem;
                 padding-left: 1.125rem;
-                margin-top: 1.875rem;
+                margin-top: 2.125rem;
             }
         }
         &__list {
@@ -321,7 +316,7 @@ body {
             @include large($pc) {
                 width: 20%;
                 width: 29%;
-                padding: 1.0625rem 0 1.0625rem 0.875rem;
+                padding: 1.0625rem 0 1rem 1rem;
             }
         }
          &__white {
@@ -333,7 +328,7 @@ body {
             padding: 0.4688rem 1.125rem;
             @include  large($pc) {
                 width: 80%;
-                padding: 1.25rem 0 1.25rem 1.375rem;
+                padding: 1.5rem 0 0.25rem 1.3125rem;
             }
         }
     }
