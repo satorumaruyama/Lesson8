@@ -96,12 +96,8 @@ body {
             justify-content: center;
             align-items: center;
             padding-top: 1.6875rem;
-        }
-        &__picture img {
             @include large($pc) {
-                width: 100%;
-                object-fit: cover;
-                height: 31.625rem;
+                padding-top: 2.1875rem;
             }
         }
     }
@@ -149,7 +145,7 @@ body {
             @include large($pc) {
                 display: flex;
                 justify-content: space-between;
-                padding-top: 1.9375rem;
+                padding-top: 2.25rem;
             }
         }
         &__item {
@@ -158,15 +154,6 @@ body {
             @include large($pc) {
                 width: calc((100% - 62px) /3);
                 padding-top: 0;
-            }
-        }
-        picture img {
-            margin: 0 auto;
-            display: flex;
-            @include large($pc) {
-                object-fit: cover;
-                height: 9.5625rem;
-                border-radius: 1.5rem;
             }
         }
         &__text {

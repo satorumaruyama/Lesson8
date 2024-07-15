@@ -13,9 +13,9 @@ body {
             justify-content: space-between;
             align-items: center;
             width: 92%;
-            // max-width: 358px;
             margin: 0 auto;
             position: relative;
+            padding: 1.25rem 0 1.0625rem;
             @include large($pc) {
                 width: 83.5%;
                 padding: 1.5625rem 0;
@@ -84,21 +84,13 @@ body {
             }
         }
         &__hamburger {
-            padding-right: 0.9375rem;
-            height: 3.9rem;
-            width: 3.8rem;
+            width: 2.625rem;
             @include large($pc) {
                 display: none;
 
             }
         }
-        .fa-bars {
-            position: relative;
-            font-size: 1.7rem;
-            padding-top: 1.25rem;
-            font-size: 1.5rem;
-            padding-left: 1.125rem;
-        }
+
     }
 
     .vision {
@@ -116,17 +108,6 @@ body {
                 padding: 2.25rem 0;
             }
         }
-        &__container img {
-            display: flex;
-            margin: 0 auto;
-            padding-top: 1.5625rem;
-            object-fit: cover;
-            @include large($pc) {
-                display: block;
-                margin: 0;
-                padding-top: 5.25rem;
-            }
-        }
         &__contents {
             width: 100%;
             max-width: 358px;
@@ -139,12 +120,19 @@ body {
                 margin: 0;
             }
         }
+        &__imgBox {
+            padding-top: 1.6875rem;
+            text-align: center;
+            @include large($pc) {
+                padding-top: 5.25rem;
+            }
+        }
         &__title {
             font-size: 1.75rem;
             font-family: "Noto Sans JP";
             color: rgb(0, 0, 0);
             font-weight: bold;
-            padding-top: 1rem;
+            padding-top: 0.8125rem;
             @include large($pc) {
                 font-size: 2.5rem;
                 padding-top: 0;
@@ -156,7 +144,7 @@ body {
             font-size: 0.9375rem;
             font-family: "Noto Sans JP";
             color: rgb(0, 0, 0);
-            padding-top: 0.9375rem;
+            padding-top: 1.125rem;
             @include large($pc) {
                 padding-top: 0.5rem;
             }
@@ -250,23 +238,24 @@ body {
     }
 
     .reason {
+        padding-bottom: 0.375rem;
         background-color: #f3f9f6;
         @include large($pc) {
-            padding-bottom: 3.25rem;
+            padding-bottom: 1.8125rem;
         }
-        .title {
+        &__title {
             font-size: 1rem;
             font-family: "Montserrat";
             color: rgb(22, 131, 82);
             font-weight: bold;
             text-align: center;
-            padding-top: 3.25rem;
+            padding-top: 3.125rem;
             @include large($pc) {
                 font-size: 1.25rem;
                 padding-top: 3.4375rem;
             }
         }
-        .subtitle {
+        &__subtitle {
             font-size: 1.25rem;
             font-family: "Noto Sans JP";
             color: rgb(0, 0, 0);
@@ -293,19 +282,17 @@ body {
             }
         }
         &__item {
-            padding-bottom: 1.125rem;
+            padding-bottom: 0.9375rem;
             @include large($pc) {
                 width: calc((100% - 3.75rem) /3);
                 padding-bottom: 0;
             }
         }
         &__item img {
-            object-fit: cover;
             width: 100%;
+            height: 12.625rem;
             @include large($pc) {
-                height:76%;
-                border-radius: 1.5rem 1.5rem 0 0;
-                
+                height:14.3125rem;
             }
         }
         &__picture {
@@ -512,13 +499,14 @@ body {
             margin: 0 auto;
             padding-top: 1.125rem;
             padding-bottom: 0;
+            text-align: center;
             @include large($pc) {
                 display: flex;
                 justify-content: space-between;
                 column-gap: 36px;
                 width: 83%;
                 padding-top: 1.1875rem;
-                max-width: 1400px;
+                max-width: 1162px;
             }
         }
         &__item {
@@ -586,7 +574,7 @@ body {
                 width: 83%;
                 padding-top: 1.625rem;
                 padding-bottom: 2.6875rem;
-                max-width: unset;
+                max-width: 1162px;
             }
         }
         &__item {

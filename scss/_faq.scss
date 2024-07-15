@@ -2,7 +2,7 @@ body {
     .faqMain {
         width: 92%;
         margin: 0 auto;
-        padding-bottom: 35px;
+        padding-bottom: 2.1875rem;
         max-width: 358px;
         @include large($pc) {
             max-width: 1197px;
@@ -12,18 +12,7 @@ body {
             padding-top: 21px;
             position: relative;
             @include large($pc) {
-                width: 93%;
-                padding-top: 29px;
-                margin: 0 auto;
-            }
-        }
-        picture img {
-            width: 100%;
-            object-fit: cover;
-            height: 14.375rem;
-            border-radius: 1.5rem;
-            @include large($pc) {
-                height: 34.3125rem;
+                padding-top: 2.0625rem;
             }
         }
         &__sp {
@@ -75,12 +64,13 @@ body {
         &__list {
             width: 92%;
             margin: 0 auto;
-            padding-bottom: 8.3125rem;
+            padding-bottom: 9.625rem;
             max-width: 358px;
             @include large($pc) {
                 width: 57%;
-                padding-top: 1.9375rem;
+                padding-top: 1.6875rem;
                 max-width: 798px;
+                padding-bottom: 3.3125rem;
             }
         }
         &__item {

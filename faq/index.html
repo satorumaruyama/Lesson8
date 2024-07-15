@@ -32,9 +32,9 @@
     <body>
         <header class="header">
             <div class="header__inner">
-                <div class="header__logo">
-                    <img src="../images/header-logo.png" alt="KIRAMEKI BEAUTY LABO">
-                </div>
+                <h1 class="header__logo">
+                    <img src="../images/header-logo.png" alt="KIRAMEKI FARM">
+                </h1>
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item"><a href="../">トップ</a></li>
@@ -42,17 +42,15 @@
                         <li class="header__item"><a href="#">よくあるご質問</a></li>
                     </ul>
                 </nav>
-                <div class="header__hamburger hamburger" id="js-hamburger">
-                    <i class="fas fa-bars"></i>
-                </div>
+                <img src="../images/images_header_ico_bar.png" alt="" class="header__hamburger hamburger" id="js-hamburger">
             </div>
         </header>
 
         <div class="faqMain">
             <div class="faqMain__container">
                 <picture>
-                    <source srcset="../images/mainVisual_faq_img.png">
-                    <img src="../images/mainVisual_faq_imgPc.png" alt="">
+                    <source srcset="../images/mainVisual_faq_imgPc.png" media="(min-width: 768px)">
+                    <img src="../images/mainVisual_faq_img.png" alt="">
                 </picture>
                 <h1 class="faqMain__title">よくあるご質問</h1>
                 <p class="faqMain__guide">トップ<span class="faqMain__gap">&gt;</span>よくあるご質問</p>
