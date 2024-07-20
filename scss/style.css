@@ -464,8 +464,8 @@ body .gallery .title {
 body .gallery .title::before {
   content: "";
   position: absolute;
-  bottom: -3px;
-  width: 12%;
+  bottom: -0.1875rem;
+  width: 14%;
   height: 3px;
   background: #168352;
 }
@@ -475,18 +475,23 @@ body .gallery .title::before {
     margin: 0 auto;
   }
 }
-body .gallery__picture {
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 1.6875rem;
+body .gallery .slider {
+  padding-top: 1.75rem;
+  margin: 0;
 }
 @media screen and (min-width: 768px) {
-  body .gallery__picture {
-    padding-top: 2.1875rem;
+  body .gallery .slider {
+    display: flex;
+    -moz-column-gap: 3.125rem;
+         column-gap: 3.125rem;
   }
+}
+body .gallery .slick-dots {
+  bottom: 0.25rem;
+}
+body .gallery .slick-dots li button:before {
+  font-size: 9px;
+  color: #168352;
 }
 body .feature {
   width: 92%;
@@ -519,8 +524,8 @@ body .feature .title {
 body .feature .title::before {
   content: "";
   position: absolute;
-  bottom: -3px;
-  width: 12%;
+  bottom: -0.1875rem;
+  width: 14%;
   height: 3px;
   background: #168352;
 }
@@ -600,15 +605,15 @@ body .price .title {
 body .price .title::before {
   content: "";
   position: absolute;
-  bottom: -3px;
-  width: 12%;
+  bottom: -0.1875rem;
+  width: 14%;
   height: 3px;
   background: #168352;
 }
 body .price__price {
   font-size: 2rem;
   font-family: "Montserrat";
-  color: rgb(0, 0, 0);
+  color: #168352;
   font-weight: bold;
   padding-top: 0.625rem;
 }
@@ -619,7 +624,7 @@ body .price__price {
 }
 body .price__small {
   font-size: 1rem;
-  color: rgb(0, 0, 0);
+  color: #168352;
   font-weight: bold;
 }
 body .spec {
@@ -641,7 +646,7 @@ body .spec {
     margin: 0 auto;
   }
 }
-body .spec .title {
+body .spec__title {
   font-size: 1.375rem;
   font-family: "Noto Sans JP";
   color: rgb(0, 0, 0);
@@ -651,15 +656,15 @@ body .spec .title {
   border-bottom: 3px solid #dddddd;
 }
 @media screen and (min-width: 768px) {
-  body .spec .title {
+  body .spec__title {
     font-size: 1.75rem;
   }
 }
-body .spec .title::before {
+body .spec__title::before {
   content: "";
   position: absolute;
-  bottom: -3px;
-  width: 12%;
+  bottom: 0.5rem;
+  width: 14%;
   height: 3px;
   background: #168352;
 }

@@ -78,8 +78,8 @@ body {
         .title::before {
             content: '';
             position: absolute;
-            bottom: -3px;
-            width: 12%;
+            bottom: -0.1875rem;
+            width: 14%;
             height: 3px;
             background: #168352;
         }
@@ -89,16 +89,20 @@ body {
                 margin: 0 auto;
             }
         }
-        &__picture {
-            margin: 0 auto;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 1.6875rem;
+        .slider {
+            padding-top: 1.75rem;
+            margin: 0;
             @include large($pc) {
-                padding-top: 2.1875rem;
+                display: flex;
+                column-gap: 3.125rem;
             }
+        }
+        .slick-dots {
+            bottom: 0.25rem;
+        }
+        .slick-dots li button:before {
+            font-size: 9px;
+            color: #168352;
         }
     }
 
@@ -129,8 +133,8 @@ body {
         .title::before {
             content: '';
             position: absolute;
-            bottom: -3px;
-            width: 12%;
+            bottom: -0.1875rem;
+            width: 14%;
             height: 3px;
             background: #168352;
         }
@@ -201,15 +205,15 @@ body {
         .title::before {
             content: '';
             position: absolute;
-            bottom: -3px;
-            width: 12%;
+            bottom: -0.1875rem;
+            width: 14%;
             height: 3px;
             background: #168352;
         }
         &__price {
             font-size: 2rem;
             font-family: "Montserrat";
-            color: rgb(0, 0, 0);
+            color: #168352;
             font-weight: bold;
             padding-top: 0.625rem;
             @include large($pc) {
@@ -218,7 +222,7 @@ body {
         }
         &__small {
             font-size: 1rem;
-            color: rgb(0, 0, 0);
+            color: #168352;
             font-weight: bold;
         }
     }
@@ -239,7 +243,7 @@ body {
                 margin: 0 auto;
             }
         }
-        .title {
+        &__title {
             font-size: 1.375rem;
             font-family: "Noto Sans JP";
             color: rgb(0, 0, 0);
@@ -251,11 +255,11 @@ body {
                 font-size: 1.75rem;
             }
         }
-        .title::before {
+        &__title::before {
             content: '';
             position: absolute;
-            bottom: -3px;
-            width: 12%;
+            bottom: 0.5rem;
+            width: 14%;
             height: 3px;
             background: #168352;
         }
