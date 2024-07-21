@@ -21,7 +21,7 @@ $(document).ready(function() {
           }
       } else {
           if ($('.slider').hasClass('slick-initialized')) {
-              $('.slider').slick('unslick');
+            //   $('.slider').slick('unslick');
           }
       }
   }
